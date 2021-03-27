@@ -11,3 +11,6 @@ A Sample UI application, which shows user's credit score by reading data from js
 Note: Developer is free to use any image assets from the internet. (only if necessary)
 
 ### Sample UI:
+![alt_text](https://github.com/vinayhosamane/CreditScoreAnalyser/blob/main/Documentation%20Resources/Screenshot%202021-03-27%20at%204.22.59%20PM.png)
+
+### Development Approach:
