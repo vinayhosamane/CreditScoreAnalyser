@@ -28,6 +28,7 @@ protocol CreditScoreCalculatable {
     func getCreditScore() -> Double
     func getCreditScoreScales() -> [Scale]?
     func getCreditScoreColor() -> UIColor?
+    func doesScoreBelongsToScale(score: Double, scale: Scale) -> Bool
 }
 
 // this class helps in fetching json data for the credit score and de-serializes data into objects.
@@ -83,6 +84,17 @@ class CreditScoreCalculator: CreditScoreCalculatable {
             return scale.min...scale.max
         })
         return scales as? [Double]
+    }
+    
+    func doesScoreBelongsToScale(score: Double, scale: Scale) -> Bool {
+        guard let report = creditScoreReport else {
+            return false
+        }
+        if (scale.min...scale.max).contains(Int(report.score)) {
+            // yes it is in the range
+            return true
+        }
+        return false
     }
     
 }

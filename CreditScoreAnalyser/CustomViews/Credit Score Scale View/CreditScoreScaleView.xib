@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="b4l-HH-6yy"/>
+                <outlet property="markerLabel" destination="wfe-ZZ-t4t" id="bQ5-JX-rDe"/>
+                <outlet property="markerView" destination="2fx-fy-Bki" id="pDF-HO-bbb"/>
                 <outlet property="percentageLabel" destination="cui-qS-94R" id="agf-k1-upM"/>
                 <outlet property="scaleContainerView" destination="cWh-jf-vkE" id="u9K-CH-VV3"/>
                 <outlet property="scaleLabel" destination="EsK-RO-djo" id="lV1-O8-Agu"/>
@@ -44,6 +46,20 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2fx-fy-Bki">
+                            <rect key="frame" x="294" y="0.0" width="85" height="55"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfe-ZZ-t4t">
+                                    <rect key="frame" x="0.0" y="0.0" width="85" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" red="0.26274509800000001" green="0.43137254899999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>

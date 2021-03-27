@@ -198,7 +198,6 @@
 				3D1844A8260EE3830003504F /* Mock Data */,
 				3D1844A2260ECC450003504F /* Business Logic */,
 				3D18448A260E2AF00003504F /* Utils */,
-				3DE25D7E260C78CD00A84707 /* CreditScoreDetailUI */,
 				3DE25D7D260C78C200A84707 /* CreditScoreUI */,
 				3DE25D47260C77D200A84707 /* AppDelegate.swift */,
 				3DE25D49260C77D200A84707 /* SceneDelegate.swift */,
@@ -235,13 +234,6 @@
 				3DE25D7F260C791000A84707 /* CreditScoreUI.swift */,
 			);
 			path = CreditScoreUI;
-			sourceTree = "<group>";
-		};
-		3DE25D7E260C78CD00A84707 /* CreditScoreDetailUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CreditScoreDetailUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
