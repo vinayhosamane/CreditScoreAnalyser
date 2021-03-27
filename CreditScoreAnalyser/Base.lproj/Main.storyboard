@@ -98,24 +98,45 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-o4-ax1" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="638" height="68"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="r4r-8g-Fyx"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6z-ht-5of" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="73" width="638" height="68"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="2Nh-R7-Alq"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-I4-2qr" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="146" width="638" height="68"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="kz9-jB-J1F"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhG-6y-fjQ" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="219" width="638" height="68"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="dqe-mc-59F"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og1-re-66F" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="292" width="638" height="68"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="HQZ-iy-FFQ"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iNK-o4-ax1" secondAttribute="trailing" id="6to-9E-Af3"/>
+                                    <constraint firstItem="iNK-o4-ax1" firstAttribute="leading" secondItem="Dtc-BW-nzK" secondAttribute="leading" id="ARe-KN-sbE"/>
+                                    <constraint firstItem="iNK-o4-ax1" firstAttribute="top" secondItem="Dtc-BW-nzK" secondAttribute="top" id="Pqr-HC-AqV"/>
+                                    <constraint firstItem="E6z-ht-5of" firstAttribute="top" secondItem="iNK-o4-ax1" secondAttribute="bottom" constant="5" id="waY-F4-EpI"/>
+                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSp-Yq-bd2" userLabel="where you stand view">
                                 <rect key="frame" x="583" y="150" width="462" height="98"/>
