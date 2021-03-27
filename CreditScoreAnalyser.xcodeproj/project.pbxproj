@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D18448C260E2B080003504F /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18448B260E2B080003504F /* ColorUtils.swift */; };
+		3D184494260E2B2D0003504F /* FontUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D184493260E2B2D0003504F /* FontUtils.swift */; };
+		3D184499260E2B4A0003504F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D184498260E2B4A0003504F /* Constants.swift */; };
+		3D18449E260ECC190003504F /* SampleCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D18449D260ECC190003504F /* SampleCreditScoreReport.json */; };
+		3D1844A4260ECC620003504F /* CreditScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1844A3260ECC620003504F /* CreditScoreCalculator.swift */; };
+		3D1844AE260EF9350003504F /* BaselineAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1844AD260EF9350003504F /* BaselineAlignedLabel.swift */; };
+		3D1844B7260F0B730003504F /* SearchScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1844B6260F0B730003504F /* SearchScoreView.xib */; };
+		3D1844BC260F0B870003504F /* SearchScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1844BB260F0B870003504F /* SearchScoreView.swift */; };
+		3D1844C1260F20BA0003504F /* CreditScoreScaleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D1844C0260F20BA0003504F /* CreditScoreScaleView.xib */; };
+		3D1844C7260F20DB0003504F /* CreditScoreScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1844C6260F20DB0003504F /* CreditScoreScaleView.swift */; };
+		3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D47260C77D200A84707 /* AppDelegate.swift */; };
+		3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D49260C77D200A84707 /* SceneDelegate.swift */; };
+		3DE25D4C260C77D200A84707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* ViewController.swift */; };
+		3DE25D4F260C77D200A84707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE25D4D260C77D200A84707 /* Main.storyboard */; };
+		3DE25D52260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D50260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld */; };
+		3DE25D54260C77D400A84707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE25D53260C77D400A84707 /* Assets.xcassets */; };
+		3DE25D57260C77D400A84707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE25D55260C77D400A84707 /* LaunchScreen.storyboard */; };
+		3DE25D62260C77D500A84707 /* CreditScoreAnalyserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D61260C77D500A84707 /* CreditScoreAnalyserTests.swift */; };
+		3DE25D6D260C77D500A84707 /* CreditScoreAnalyserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D6C260C77D500A84707 /* CreditScoreAnalyserUITests.swift */; };
+		3DE25D80260C791000A84707 /* CreditScoreUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D7F260C791000A84707 /* CreditScoreUI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DE25D5E260C77D500A84707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE25D3C260C77D200A84707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE25D43260C77D200A84707;
+			remoteInfo = CreditScoreAnalyser;
+		};
+		3DE25D69260C77D500A84707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE25D3C260C77D200A84707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE25D43260C77D200A84707;
+			remoteInfo = CreditScoreAnalyser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D18448B260E2B080003504F /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		3D184493260E2B2D0003504F /* FontUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontUtils.swift; sourceTree = "<group>"; };
+		3D184498260E2B4A0003504F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3D18449D260ECC190003504F /* SampleCreditScoreReport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleCreditScoreReport.json; sourceTree = "<group>"; };
+		3D1844A3260ECC620003504F /* CreditScoreCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculator.swift; sourceTree = "<group>"; };
+		3D1844AD260EF9350003504F /* BaselineAlignedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaselineAlignedLabel.swift; sourceTree = "<group>"; };
+		3D1844B6260F0B730003504F /* SearchScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchScoreView.xib; sourceTree = "<group>"; };
+		3D1844BB260F0B870003504F /* SearchScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScoreView.swift; sourceTree = "<group>"; };
+		3D1844C0260F20BA0003504F /* CreditScoreScaleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditScoreScaleView.xib; sourceTree = "<group>"; };
+		3D1844C6260F20DB0003504F /* CreditScoreScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreScaleView.swift; sourceTree = "<group>"; };
+		3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE25D47260C77D200A84707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DE25D49260C77D200A84707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DE25D4B260C77D200A84707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE25D4E260C77D200A84707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DE25D51260C77D200A84707 /* CreditScoreAnalyser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CreditScoreAnalyser.xcdatamodel; sourceTree = "<group>"; };
+		3DE25D53260C77D400A84707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DE25D56260C77D400A84707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DE25D58260C77D400A84707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE25D5D260C77D500A84707 /* CreditScoreAnalyserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreAnalyserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE25D61260C77D500A84707 /* CreditScoreAnalyserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreAnalyserTests.swift; sourceTree = "<group>"; };
+		3DE25D63260C77D500A84707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE25D68260C77D500A84707 /* CreditScoreAnalyserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditScoreAnalyserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE25D6C260C77D500A84707 /* CreditScoreAnalyserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreAnalyserUITests.swift; sourceTree = "<group>"; };
+		3DE25D6E260C77D500A84707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE25D7F260C791000A84707 /* CreditScoreUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE25D41260C77D200A84707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE25D5A260C77D500A84707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE25D65260C77D500A84707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D18448A260E2AF00003504F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D18448B260E2B080003504F /* ColorUtils.swift */,
+				3D184493260E2B2D0003504F /* FontUtils.swift */,
+				3D184498260E2B4A0003504F /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3D1844A2260ECC450003504F /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				3D1844A3260ECC620003504F /* CreditScoreCalculator.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		3D1844A8260EE3830003504F /* Mock Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D18449D260ECC190003504F /* SampleCreditScoreReport.json */,
+			);
+			path = "Mock Data";
+			sourceTree = "<group>";
+		};
+		3D1844AC260EF91B0003504F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3D1844CE260F3F880003504F /* Baseline Aligned Label */,
+				3D1844C5260F20C10003504F /* Credit Score Scale View */,
+				3D1844B5260F0B4F0003504F /* Search View */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3D1844B5260F0B4F0003504F /* Search View */ = {
+			isa = PBXGroup;
+			children = (
+				3D1844B6260F0B730003504F /* SearchScoreView.xib */,
+				3D1844BB260F0B870003504F /* SearchScoreView.swift */,
+			);
+			path = "Search View";
+			sourceTree = "<group>";
+		};
+		3D1844C5260F20C10003504F /* Credit Score Scale View */ = {
+			isa = PBXGroup;
+			children = (
+				3D1844C0260F20BA0003504F /* CreditScoreScaleView.xib */,
+				3D1844C6260F20DB0003504F /* CreditScoreScaleView.swift */,
+			);
+			path = "Credit Score Scale View";
+			sourceTree = "<group>";
+		};
+		3D1844CE260F3F880003504F /* Baseline Aligned Label */ = {
+			isa = PBXGroup;
+			children = (
+				3D1844AD260EF9350003504F /* BaselineAlignedLabel.swift */,
+			);
+			path = "Baseline Aligned Label";
+			sourceTree = "<group>";
+		};
+		3D1844CF260F3FC70003504F /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DE25D4B260C77D200A84707 /* ViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		3DE25D3B260C77D200A84707 = {
+			isa = PBXGroup;
+			children = (
+				3DE25D46260C77D200A84707 /* CreditScoreAnalyser */,
+				3DE25D60260C77D500A84707 /* CreditScoreAnalyserTests */,
+				3DE25D6B260C77D500A84707 /* CreditScoreAnalyserUITests */,
+				3DE25D45260C77D200A84707 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE25D45260C77D200A84707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */,
+				3DE25D5D260C77D500A84707 /* CreditScoreAnalyserTests.xctest */,
+				3DE25D68260C77D500A84707 /* CreditScoreAnalyserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE25D46260C77D200A84707 /* CreditScoreAnalyser */ = {
+			isa = PBXGroup;
+			children = (
+				3D1844CF260F3FC70003504F /* View Controller */,
+				3D1844AC260EF91B0003504F /* CustomViews */,
+				3D1844A8260EE3830003504F /* Mock Data */,
+				3D1844A2260ECC450003504F /* Business Logic */,
+				3D18448A260E2AF00003504F /* Utils */,
+				3DE25D7E260C78CD00A84707 /* CreditScoreDetailUI */,
+				3DE25D7D260C78C200A84707 /* CreditScoreUI */,
+				3DE25D47260C77D200A84707 /* AppDelegate.swift */,
+				3DE25D49260C77D200A84707 /* SceneDelegate.swift */,
+				3DE25D4D260C77D200A84707 /* Main.storyboard */,
+				3DE25D53260C77D400A84707 /* Assets.xcassets */,
+				3DE25D55260C77D400A84707 /* LaunchScreen.storyboard */,
+				3DE25D58260C77D400A84707 /* Info.plist */,
+				3DE25D50260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld */,
+			);
+			path = CreditScoreAnalyser;
+			sourceTree = "<group>";
+		};
+		3DE25D60260C77D500A84707 /* CreditScoreAnalyserTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE25D61260C77D500A84707 /* CreditScoreAnalyserTests.swift */,
+				3DE25D63260C77D500A84707 /* Info.plist */,
+			);
+			path = CreditScoreAnalyserTests;
+			sourceTree = "<group>";
+		};
+		3DE25D6B260C77D500A84707 /* CreditScoreAnalyserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE25D6C260C77D500A84707 /* CreditScoreAnalyserUITests.swift */,
+				3DE25D6E260C77D500A84707 /* Info.plist */,
+			);
+			path = CreditScoreAnalyserUITests;
+			sourceTree = "<group>";
+		};
+		3DE25D7D260C78C200A84707 /* CreditScoreUI */ = {
+			isa = PBXGroup;
+			children = (
+				3DE25D7F260C791000A84707 /* CreditScoreUI.swift */,
+			);
+			path = CreditScoreUI;
+			sourceTree = "<group>";
+		};
+		3DE25D7E260C78CD00A84707 /* CreditScoreDetailUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreditScoreDetailUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE25D43260C77D200A84707 /* CreditScoreAnalyser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE25D71260C77D500A84707 /* Build configuration list for PBXNativeTarget "CreditScoreAnalyser" */;
+			buildPhases = (
+				3DE25D40260C77D200A84707 /* Sources */,
+				3DE25D41260C77D200A84707 /* Frameworks */,
+				3DE25D42260C77D200A84707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditScoreAnalyser;
+			productName = CreditScoreAnalyser;
+			productReference = 3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DE25D5C260C77D500A84707 /* CreditScoreAnalyserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE25D74260C77D500A84707 /* Build configuration list for PBXNativeTarget "CreditScoreAnalyserTests" */;
+			buildPhases = (
+				3DE25D59260C77D500A84707 /* Sources */,
+				3DE25D5A260C77D500A84707 /* Frameworks */,
+				3DE25D5B260C77D500A84707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE25D5F260C77D500A84707 /* PBXTargetDependency */,
+			);
+			name = CreditScoreAnalyserTests;
+			productName = CreditScoreAnalyserTests;
+			productReference = 3DE25D5D260C77D500A84707 /* CreditScoreAnalyserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DE25D67260C77D500A84707 /* CreditScoreAnalyserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE25D77260C77D500A84707 /* Build configuration list for PBXNativeTarget "CreditScoreAnalyserUITests" */;
+			buildPhases = (
+				3DE25D64260C77D500A84707 /* Sources */,
+				3DE25D65260C77D500A84707 /* Frameworks */,
+				3DE25D66260C77D500A84707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE25D6A260C77D500A84707 /* PBXTargetDependency */,
+			);
+			name = CreditScoreAnalyserUITests;
+			productName = CreditScoreAnalyserUITests;
+			productReference = 3DE25D68260C77D500A84707 /* CreditScoreAnalyserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE25D3C260C77D200A84707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					3DE25D43260C77D200A84707 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					3DE25D5C260C77D500A84707 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 3DE25D43260C77D200A84707;
+					};
+					3DE25D67260C77D500A84707 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 3DE25D43260C77D200A84707;
+					};
+				};
+			};
+			buildConfigurationList = 3DE25D3F260C77D200A84707 /* Build configuration list for PBXProject "CreditScoreAnalyser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DE25D3B260C77D200A84707;
+			productRefGroup = 3DE25D45260C77D200A84707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DE25D43260C77D200A84707 /* CreditScoreAnalyser */,
+				3DE25D5C260C77D500A84707 /* CreditScoreAnalyserTests */,
+				3DE25D67260C77D500A84707 /* CreditScoreAnalyserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE25D42260C77D200A84707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE25D57260C77D400A84707 /* LaunchScreen.storyboard in Resources */,
+				3D18449E260ECC190003504F /* SampleCreditScoreReport.json in Resources */,
+				3DE25D54260C77D400A84707 /* Assets.xcassets in Resources */,
+				3DE25D4F260C77D200A84707 /* Main.storyboard in Resources */,
+				3D1844B7260F0B730003504F /* SearchScoreView.xib in Resources */,
+				3D1844C1260F20BA0003504F /* CreditScoreScaleView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE25D5B260C77D500A84707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE25D66260C77D500A84707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE25D40260C77D200A84707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE25D52260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld in Sources */,
+				3DE25D80260C791000A84707 /* CreditScoreUI.swift in Sources */,
+				3D184494260E2B2D0003504F /* FontUtils.swift in Sources */,
+				3DE25D4C260C77D200A84707 /* ViewController.swift in Sources */,
+				3D18448C260E2B080003504F /* ColorUtils.swift in Sources */,
+				3D1844A4260ECC620003504F /* CreditScoreCalculator.swift in Sources */,
+				3D1844BC260F0B870003504F /* SearchScoreView.swift in Sources */,
+				3D1844AE260EF9350003504F /* BaselineAlignedLabel.swift in Sources */,
+				3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */,
+				3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */,
+				3D184499260E2B4A0003504F /* Constants.swift in Sources */,
+				3D1844C7260F20DB0003504F /* CreditScoreScaleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE25D59260C77D500A84707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE25D62260C77D500A84707 /* CreditScoreAnalyserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE25D64260C77D500A84707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE25D6D260C77D500A84707 /* CreditScoreAnalyserUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DE25D5F260C77D500A84707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE25D43260C77D200A84707 /* CreditScoreAnalyser */;
+			targetProxy = 3DE25D5E260C77D500A84707 /* PBXContainerItemProxy */;
+		};
+		3DE25D6A260C77D500A84707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE25D43260C77D200A84707 /* CreditScoreAnalyser */;
+			targetProxy = 3DE25D69260C77D500A84707 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DE25D4D260C77D200A84707 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE25D4E260C77D200A84707 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DE25D55260C77D400A84707 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE25D56260C77D400A84707 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DE25D6F260C77D500A84707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DE25D70260C77D500A84707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DE25D72260C77D500A84707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				INFOPLIST_FILE = CreditScoreAnalyser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinay.CreditScoreAnalyser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DE25D73260C77D500A84707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				INFOPLIST_FILE = CreditScoreAnalyser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinay.CreditScoreAnalyser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DE25D75260C77D500A84707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				INFOPLIST_FILE = CreditScoreAnalyserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinay.CreditScoreAnalyserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScoreAnalyser.app/CreditScoreAnalyser";
+			};
+			name = Debug;
+		};
+		3DE25D76260C77D500A84707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				INFOPLIST_FILE = CreditScoreAnalyserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinay.CreditScoreAnalyserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditScoreAnalyser.app/CreditScoreAnalyser";
+			};
+			name = Release;
+		};
+		3DE25D78260C77D500A84707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				INFOPLIST_FILE = CreditScoreAnalyserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinay.CreditScoreAnalyserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditScoreAnalyser;
+			};
+			name = Debug;
+		};
+		3DE25D79260C77D500A84707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				INFOPLIST_FILE = CreditScoreAnalyserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vinay.CreditScoreAnalyserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditScoreAnalyser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE25D3F260C77D200A84707 /* Build configuration list for PBXProject "CreditScoreAnalyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE25D6F260C77D500A84707 /* Debug */,
+				3DE25D70260C77D500A84707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE25D71260C77D500A84707 /* Build configuration list for PBXNativeTarget "CreditScoreAnalyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE25D72260C77D500A84707 /* Debug */,
+				3DE25D73260C77D500A84707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE25D74260C77D500A84707 /* Build configuration list for PBXNativeTarget "CreditScoreAnalyserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE25D75260C77D500A84707 /* Debug */,
+				3DE25D76260C77D500A84707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE25D77260C77D500A84707 /* Build configuration list for PBXNativeTarget "CreditScoreAnalyserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE25D78260C77D500A84707 /* Debug */,
+				3DE25D79260C77D500A84707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DE25D50260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DE25D51260C77D200A84707 /* CreditScoreAnalyser.xcdatamodel */,
+			);
+			currentVersion = 3DE25D51260C77D200A84707 /* CreditScoreAnalyser.xcdatamodel */;
+			path = CreditScoreAnalyser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DE25D3C260C77D200A84707 /* Project object */;
+}

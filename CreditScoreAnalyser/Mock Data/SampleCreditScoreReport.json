@@ -1,0 +1,35 @@
+{
+  "score": 310,
+  "scales": [
+    {
+      "type": "highest",
+      "min": 825,
+      "max": 900,
+      "colorHex": "#A3C65D"
+    },
+    {
+      "type": "high",
+      "min": 800,
+      "max": 824,
+      "colorHex": "#D8AC3D"
+    },
+    {
+      "type": "moderate",
+      "min": 775,
+      "max": 799,
+      "colorHex": "#CE7733"
+    },
+    {
+      "type": "lower",
+      "min": 700,
+      "max": 774,
+      "colorHex": "#C54D2A"
+    },
+    {
+      "type": "lowest",
+      "min": 300,
+      "max": 699,
+      "colorHex": "#C13727"
+    }
+    ]
+}
