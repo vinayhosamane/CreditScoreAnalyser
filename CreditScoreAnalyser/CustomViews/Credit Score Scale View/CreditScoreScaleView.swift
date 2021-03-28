@@ -8,14 +8,6 @@
 import Foundation
 import UIKit
 
-struct CreditScoreScaleViewInput {
-    var percentageValue: String
-    var scaleContainerViewBGColor: UIColor
-    var scaleLabelValue: String
-    var shouldShowMarker: Bool
-    var markerLabelText: String?
-}
-
 @IBDesignable
 final class CreditScoreScaleView: UIView {
     

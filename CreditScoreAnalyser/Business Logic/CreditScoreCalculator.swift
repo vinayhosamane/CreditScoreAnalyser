@@ -8,39 +8,17 @@
 import Foundation
 import UIKit
 
-enum Type: String, Decodable {
-    case lower
-}
-
-struct Scale: Codable {
-    var type: String
-    var min: Int
-    var max: Int
-    var colorHex: String
-}
-
-struct CreditScore: Codable {
-    var score: Double
-    var scales: [Scale]
-}
-
-protocol CreditScoreCalculatable {
-    func getCreditScore() -> Double
-    func getCreditScoreScales() -> [Scale]?
-    func getCreditScoreColor() -> UIColor?
-    func doesScoreBelongsToScale(score: Double, scale: Scale) -> Bool
-}
-
 // this class helps in fetching json data for the credit score and de-serializes data into objects.
 class CreditScoreCalculator: CreditScoreCalculatable {
     
     var creditScoreReport: CreditScore? = nil
     
-    // let's write code to get the json from undle
+    // let's write code to get the json from bundle
     init() {
         deSerializeJsonFile()
     }
     
+    // datat processor
     private func deSerializeJsonFile() {
         // get json data from bundle
         do {
@@ -79,7 +57,7 @@ class CreditScoreCalculator: CreditScoreCalculatable {
     }
     
     //returns scales range in array
-    func buildRange() -> [Double]? {
+    private func buildRange() -> [Double]? {
         let scales = creditScoreReport?.scales.map({ (scale: Scale) -> Any in
             return scale.min...scale.max
         })
@@ -97,24 +75,4 @@ class CreditScoreCalculator: CreditScoreCalculatable {
         return false
     }
     
-}
-
-// copied from internet
-extension UIColor {
-
-    convenience init?(hexRGBA: String?) {
-        guard let rgba = hexRGBA, let val = Int(rgba.replacingOccurrences(of: "#", with: ""), radix: 16) else {
-            return nil
-        }
-        self.init(red: CGFloat((val >> 24) & 0xff) / 255.0, green: CGFloat((val >> 16) & 0xff) / 255.0, blue: CGFloat((val >> 8) & 0xff) / 255.0, alpha: CGFloat(val & 0xff) / 255.0)
-    }
-    
-    // handles both hex 6 and hex 8
-    convenience init?(hexRGB: String?) {
-        guard let rgb = hexRGB else {
-            return nil
-        }
-        self.init(hexRGBA: rgb + "ff") // Add alpha = 1.0
-    }
-
 }

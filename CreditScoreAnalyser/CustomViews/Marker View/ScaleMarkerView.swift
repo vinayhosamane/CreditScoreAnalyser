@@ -8,11 +8,6 @@
 import Foundation
 import UIKit
 
-struct ScaleMarkerViewUIInput {
-    var bgColor: UIColor
-    var markerLabeltext: String
-}
-
 @IBDesignable
 final class ScaleMarkerView: UIView {
     

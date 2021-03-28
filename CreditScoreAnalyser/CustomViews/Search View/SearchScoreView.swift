@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-@IBDesignable final class SearchScoreView: UIView {
+@IBDesignable
+final class SearchScoreView: UIView {
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var searchLabel: BaselineAlignedLabel!
