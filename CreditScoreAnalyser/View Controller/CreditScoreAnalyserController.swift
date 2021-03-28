@@ -8,7 +8,7 @@
 import UIKit
 
 // View controller responsible for showing credit score chart and it's details.
-class ViewController: UIViewController {
+class CreditScoreAnalyserController: UIViewController {
     
     @IBOutlet weak var pointerLabel: UILabel!
     @IBOutlet weak var creditScoreCircleView: CreditScoreUI!

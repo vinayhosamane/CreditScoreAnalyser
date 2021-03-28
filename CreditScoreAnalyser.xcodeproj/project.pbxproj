@@ -29,7 +29,7 @@
 		3D28C101261052D500341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
 		3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D47260C77D200A84707 /* AppDelegate.swift */; };
 		3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D49260C77D200A84707 /* SceneDelegate.swift */; };
-		3DE25D4C260C77D200A84707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* ViewController.swift */; };
+		3DE25D4C260C77D200A84707 /* CreditScoreAnalyserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* CreditScoreAnalyserController.swift */; };
 		3DE25D4F260C77D200A84707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE25D4D260C77D200A84707 /* Main.storyboard */; };
 		3DE25D52260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D50260C77D200A84707 /* CreditScoreAnalyser.xcdatamodeld */; };
 		3DE25D54260C77D400A84707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE25D53260C77D400A84707 /* Assets.xcassets */; };
@@ -80,7 +80,7 @@
 		3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE25D47260C77D200A84707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE25D49260C77D200A84707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DE25D4B260C77D200A84707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DE25D4B260C77D200A84707 /* CreditScoreAnalyserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreAnalyserController.swift; sourceTree = "<group>"; };
 		3DE25D4E260C77D200A84707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DE25D51260C77D200A84707 /* CreditScoreAnalyser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CreditScoreAnalyser.xcdatamodel; sourceTree = "<group>"; };
 		3DE25D53260C77D400A84707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,9 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				3DE25D7D260C78C200A84707 /* Circle UI */,
-				3D28C0B82610374200341BE3 /* Marker View */,
+				3D28C0B82610374200341BE3 /* Marker UI */,
 				3D1844CE260F3F880003504F /* Baseline Aligned Label */,
-				3D1844C5260F20C10003504F /* Credit Score Scale View */,
+				3D1844C5260F20C10003504F /* Credit Score Scale UI */,
 				3D1844B5260F0B4F0003504F /* Search View */,
 			);
 			path = CustomViews;
@@ -170,14 +170,14 @@
 			path = "Search View";
 			sourceTree = "<group>";
 		};
-		3D1844C5260F20C10003504F /* Credit Score Scale View */ = {
+		3D1844C5260F20C10003504F /* Credit Score Scale UI */ = {
 			isa = PBXGroup;
 			children = (
 				3D28C0CC26104F0400341BE3 /* model */,
 				3D1844C0260F20BA0003504F /* CreditScoreScaleView.xib */,
 				3D1844C6260F20DB0003504F /* CreditScoreScaleView.swift */,
 			);
-			path = "Credit Score Scale View";
+			path = "Credit Score Scale UI";
 			sourceTree = "<group>";
 		};
 		3D1844CE260F3F880003504F /* Baseline Aligned Label */ = {
@@ -191,19 +191,19 @@
 		3D1844CF260F3FC70003504F /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3DE25D4B260C77D200A84707 /* ViewController.swift */,
+				3DE25D4B260C77D200A84707 /* CreditScoreAnalyserController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
 		};
-		3D28C0B82610374200341BE3 /* Marker View */ = {
+		3D28C0B82610374200341BE3 /* Marker UI */ = {
 			isa = PBXGroup;
 			children = (
 				3D28C0C326104EBD00341BE3 /* model */,
 				3D28C0B92610375E00341BE3 /* ScaleMarkerView.xib */,
 				3D28C0BE2610376E00341BE3 /* ScaleMarkerView.swift */,
 			);
-			path = "Marker View";
+			path = "Marker UI";
 			sourceTree = "<group>";
 		};
 		3D28C0C326104EBD00341BE3 /* model */ = {
@@ -473,7 +473,7 @@
 				3D28C0EF2610510B00341BE3 /* CreditScoreUIInputModel.swift in Sources */,
 				3D28C0CE26104F1800341BE3 /* CreditScoreScaleViewInputModel.swift in Sources */,
 				3D28C0C526104ED800341BE3 /* ScaleMarkerViewUIInputModel.swift in Sources */,
-				3DE25D4C260C77D200A84707 /* ViewController.swift in Sources */,
+				3DE25D4C260C77D200A84707 /* CreditScoreAnalyserController.swift in Sources */,
 				3D18448C260E2B080003504F /* ColorUtils.swift in Sources */,
 				3D1844A4260ECC620003504F /* CreditScoreCalculator.swift in Sources */,
 				3D28C0D726104F6E00341BE3 /* CreditScoreModel.swift in Sources */,
