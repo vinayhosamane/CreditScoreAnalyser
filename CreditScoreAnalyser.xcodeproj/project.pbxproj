@@ -57,6 +57,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3D28C13A2610972F00341BE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3D18448B260E2B080003504F /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		3D184493260E2B2D0003504F /* FontUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontUtils.swift; sourceTree = "<group>"; };
@@ -341,6 +354,7 @@
 				3DE25D40260C77D200A84707 /* Sources */,
 				3DE25D41260C77D200A84707 /* Frameworks */,
 				3DE25D42260C77D200A84707 /* Resources */,
+				3D28C13A2610972F00341BE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,7 +407,7 @@
 		3DE25D3C260C77D200A84707 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					3DE25D43260C77D200A84707 = {

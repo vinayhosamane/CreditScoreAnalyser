@@ -60,6 +60,16 @@
                ReferencedContainer = "container:CreditScoreAnalyser.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D28C1272610972F00341BE3"
+               BuildableName = "CreditScoreUIFrameowrkTests.xctest"
+               BlueprintName = "CreditScoreUIFrameowrkTests"
+               ReferencedContainer = "container:CreditScoreAnalyser.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

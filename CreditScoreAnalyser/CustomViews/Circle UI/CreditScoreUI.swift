@@ -18,10 +18,10 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
     private var strokeColor = ColorUtils.strokeColor
     
     // score receibed from report
-    private var creditScore: CGFloat = 860.0
+    private var creditScore: CGFloat = 0.0
 
     // it is in percentage
-    private var myCreditScore: CGFloat = 820.0 / CGFloat(Constants.creditScoreScale)
+    private var myCreditScore: CGFloat = 0.0
     
     // start angle for the arc
     private lazy var startAngle: CGFloat = {
@@ -123,7 +123,7 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
     
     func configure(with config: CreditScoreUIInput) {
         // set credit score in the view state and re-draw the view.
-        myCreditScore = CGFloat(config.score / Constants.creditScoreScale)
+        myCreditScore = CGFloat((config.score - 300.0) / 600.0)
         strokeColor = config.color.cgColor
         creditScore = CGFloat(config.score)
         // re-draw layers
