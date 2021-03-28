@@ -1,35 +1,42 @@
 {
   "score": 868,
+  "scaleMin": 300,
+  "scaleMax": 900,
   "scales": [
     {
       "type": "highest",
       "min": 825,
       "max": 900,
-      "colorHex": "#A3C65D"
+      "colorHex": "#A3C65D",
+      "percentile": "19%"
     },
     {
       "type": "high",
       "min": 800,
       "max": 824,
-      "colorHex": "#D8AC3D"
+      "colorHex": "#D8AC3D",
+      "percentile": "20%"
     },
     {
       "type": "moderate",
       "min": 775,
       "max": 799,
-      "colorHex": "#CE7733"
+      "colorHex": "#CE7733",
+      "percentile": "21%"
     },
     {
       "type": "lower",
       "min": 700,
       "max": 774,
-      "colorHex": "#C54D2A"
+      "colorHex": "#C54D2A",
+      "percentile": "21%"
     },
     {
       "type": "lowest",
       "min": 300,
       "max": 699,
-      "colorHex": "#C13727"
+      "colorHex": "#C13727",
+      "percentile": "19%"
     }
     ]
 }

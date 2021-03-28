@@ -34,7 +34,7 @@ class CreditScoreCalculatorTests: XCTestCase {
             XCTFail("Could not find valid score calculator")
             return
         }
-        XCTAssert(report.getCreditScore() == 811.0, "Validate if the credit score form json is same as inside the report.")
+        XCTAssert(report.getCreditScore() == 868.0, "Validate if the credit score form json is same as inside the report.")
     }
     
     func testGetCreditScoreScales() {
@@ -51,7 +51,7 @@ class CreditScoreCalculatorTests: XCTestCase {
             return
         }
         //(hex)#D8AC3D --- rgb(216,172,61)
-        XCTAssert(report.getCreditScoreColor() == UIColor(hexRGB: "#D8AC3D"), "Validate the color for credit score.")
+        XCTAssert(report.getCreditScoreColor() == UIColor(hexRGB: "#A3C65D"), "Validate the color for credit score.")
     }
     
     func testDoesScoreBelongsToScale() {
@@ -62,10 +62,11 @@ class CreditScoreCalculatorTests: XCTestCase {
         let sampleScale = Scale(type: "highest",
                                 min: 825,
                                 max: 900,
-                                colorHex: "#A3C65D")
+                                colorHex: "#A3C65D",
+                                percentile: "19%")
         let score = report.getCreditScore()
         
-        XCTAssert(report.doesScoreBelongsToScale(score: score, scale: sampleScale) == false, "check if the score is available in the given scale.")
+        XCTAssert(report.doesScoreBelongsToScale(score: score, scale: sampleScale) == true, "check if the score is available in the given scale.")
     }
 
 }

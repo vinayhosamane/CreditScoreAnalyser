@@ -12,9 +12,12 @@ struct Scale: Codable {
     var min: Int
     var max: Int
     var colorHex: String
+    var percentile: String
 }
 
 struct CreditScore: Codable {
     var score: Double
+    var scaleMin: Int
+    var scaleMax: Int
     var scales: [Scale]
 }
