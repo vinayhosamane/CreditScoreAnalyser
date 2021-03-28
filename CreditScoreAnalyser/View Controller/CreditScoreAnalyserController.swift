@@ -10,7 +10,6 @@ import UIKit
 // View controller responsible for showing credit score chart and it's details.
 class CreditScoreAnalyserController: UIViewController {
     
-    @IBOutlet weak var pointerLabel: UILabel!
     @IBOutlet weak var creditScoreCircleView: CreditScoreUI!
     
     @IBOutlet weak var searchScoreView: SearchScoreView!
@@ -20,6 +19,7 @@ class CreditScoreAnalyserController: UIViewController {
     @IBOutlet weak var mediumScaleView: CreditScoreScaleView!
     @IBOutlet weak var lowScaleView: CreditScoreScaleView!
     @IBOutlet weak var lowestScaleView: CreditScoreScaleView!
+    @IBOutlet weak var circleMaskView: UIView!
     
     var creditScoreReport: CreditScoreCalculatable?
     
@@ -48,15 +48,15 @@ class CreditScoreAnalyserController: UIViewController {
         // let's add center text to the circle.
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 40.0, weight: .heavy)
-        label.frame = CGRect(x: 0 + (creditScoreCircleView.bounds.width/2) - 30,
-                             y: creditScoreCircleView.bounds.height / 2 - 35.0,
+        label.frame = CGRect(x: circleMaskView.bounds.origin.x + circleMaskView.bounds.size.width / 2 - 40,
+                             y: circleMaskView.bounds.origin.y + circleMaskView.bounds.size.height / 2 - 40,
                              width: 100,
                              height: 100)
         label.text = "\(Int(report.getCreditScore()))"
         label.textColor = report.getCreditScoreColor() ?? .red
         label.isHidden = false
-        creditScoreCircleView.addSubview(label)
-        creditScoreCircleView.setNeedsDisplay()
+        circleMaskView.addSubview(label)
+        circleMaskView.setNeedsDisplay()
         
         // 1. set scale colors from the report
         guard let scales = report.getCreditScoreScales() else {
