@@ -32,3 +32,11 @@ Note: We can use XCUITests to test custom views to match the requirement.
 
 ### Final Outcome:
 
+![alt_text](https://github.com/vinayhosamane/CreditScoreAnalyser/blob/main/Documentation%20Resources/Screenshot%202021-03-28%20at%2012.50.17%20PM.png)
+
+### Improvements
+
+* UI can be developed with size class in considerations. i.e supoprting auto layout in multiple device formats. This needs some sort of UI layout design from UX team.
+* Circle UI can be more customised. In the cureent code, I have added mask UI to show start and end labels to the circle. This can be improved by spending some time in understand CATextLayer.
+* All these custom views can be moved to a share location such as frameworks or library for easy integrations for other developers.
+* XCUITest cases can be implmented to make sure there are no regressions on UI requirements in future.
