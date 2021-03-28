@@ -51,7 +51,7 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
         maskLayer.path = circularPath.cgPath
         maskLayer.strokeColor = ColorUtils.emptyStrokeColor
         maskLayer.lineWidth = Constants.strokeLineWidth
-        maskLayer.lineCap = .round
+        maskLayer.lineCap = .square
 
         return maskLayer
     }
