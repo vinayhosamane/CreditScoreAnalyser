@@ -141,17 +141,18 @@
 			path = "Business Logic";
 			sourceTree = "<group>";
 		};
-		3D1844A8260EE3830003504F /* Mock Data */ = {
+		3D1844A8260EE3830003504F /* JSON Input */ = {
 			isa = PBXGroup;
 			children = (
 				3D18449D260ECC190003504F /* SampleCreditScoreReport.json */,
 			);
-			path = "Mock Data";
+			path = "JSON Input";
 			sourceTree = "<group>";
 		};
 		3D1844AC260EF91B0003504F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				3DE25D7D260C78C200A84707 /* Circle UI */,
 				3D28C0B82610374200341BE3 /* Marker View */,
 				3D1844CE260F3F880003504F /* Baseline Aligned Label */,
 				3D1844C5260F20C10003504F /* Credit Score Scale View */,
@@ -287,10 +288,9 @@
 			children = (
 				3D1844CF260F3FC70003504F /* View Controller */,
 				3D1844AC260EF91B0003504F /* CustomViews */,
-				3D1844A8260EE3830003504F /* Mock Data */,
+				3D1844A8260EE3830003504F /* JSON Input */,
 				3D1844A2260ECC450003504F /* Business Logic */,
 				3D18448A260E2AF00003504F /* Utils */,
-				3DE25D7D260C78C200A84707 /* CreditScoreUI */,
 				3DE25D47260C77D200A84707 /* AppDelegate.swift */,
 				3DE25D49260C77D200A84707 /* SceneDelegate.swift */,
 				3DE25D4D260C77D200A84707 /* Main.storyboard */,
@@ -321,13 +321,13 @@
 			path = CreditScoreAnalyserUITests;
 			sourceTree = "<group>";
 		};
-		3DE25D7D260C78C200A84707 /* CreditScoreUI */ = {
+		3DE25D7D260C78C200A84707 /* Circle UI */ = {
 			isa = PBXGroup;
 			children = (
 				3D28C0ED261050FC00341BE3 /* model */,
 				3DE25D7F260C791000A84707 /* CreditScoreUI.swift */,
 			);
-			path = CreditScoreUI;
+			path = "Circle UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

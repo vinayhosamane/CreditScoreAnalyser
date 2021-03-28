@@ -28,7 +28,7 @@
                                 <rect key="frame" x="120" y="271" width="240" height="240"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IB-Jb-7SY" userLabel="start label">
-                                        <rect key="frame" x="145" y="224" width="28" height="21"/>
+                                        <rect key="frame" x="150" y="218" width="28" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="sZX-8l-pTl"/>
                                         </constraints>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eug-Gb-Qzl" userLabel="end label">
-                                        <rect key="frame" x="220" y="140" width="28" height="17"/>
+                                        <rect key="frame" x="210" y="150" width="28" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="17" id="n8T-WK-AM8"/>
                                         </constraints>
@@ -48,12 +48,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="7IB-Jb-7SY" firstAttribute="leading" secondItem="tsl-x3-vzW" secondAttribute="leading" constant="145" id="3fY-6H-njD"/>
-                                    <constraint firstItem="7IB-Jb-7SY" firstAttribute="top" secondItem="tsl-x3-vzW" secondAttribute="top" constant="224" id="Ece-pY-YpL"/>
-                                    <constraint firstItem="Eug-Gb-Qzl" firstAttribute="leading" secondItem="tsl-x3-vzW" secondAttribute="leading" constant="220" id="Eqa-PT-64t"/>
+                                    <constraint firstItem="7IB-Jb-7SY" firstAttribute="leading" secondItem="tsl-x3-vzW" secondAttribute="leading" constant="150" id="3fY-6H-njD"/>
+                                    <constraint firstItem="7IB-Jb-7SY" firstAttribute="top" secondItem="tsl-x3-vzW" secondAttribute="top" constant="218" id="Ece-pY-YpL"/>
+                                    <constraint firstItem="Eug-Gb-Qzl" firstAttribute="leading" secondItem="tsl-x3-vzW" secondAttribute="leading" constant="210" id="Eqa-PT-64t"/>
                                     <constraint firstAttribute="width" constant="240" id="O8y-TW-fin"/>
                                     <constraint firstAttribute="height" constant="240" id="PnH-Pr-l5k"/>
-                                    <constraint firstItem="Eug-Gb-Qzl" firstAttribute="top" secondItem="tsl-x3-vzW" secondAttribute="top" constant="140" id="dQ0-VU-ZBa"/>
+                                    <constraint firstItem="Eug-Gb-Qzl" firstAttribute="top" secondItem="tsl-x3-vzW" secondAttribute="top" constant="150" id="dQ0-VU-ZBa"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orH-IZ-OtU" userLabel="vertical separator">

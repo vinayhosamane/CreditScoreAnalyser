@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         // let's add center text to the circle.
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 35.0, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 40.0, weight: .heavy)
         label.frame = CGRect(x: 0 + (creditScoreCircleView.bounds.width/2) - 30,
                              y: creditScoreCircleView.bounds.height / 2 - 35.0,
                              width: 100,

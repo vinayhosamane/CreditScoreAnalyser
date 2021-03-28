@@ -35,7 +35,9 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
     
     // gives radius of the arc
     private lazy var radius: CGFloat = {
-        return 120 // we have to calculate this from the arc size..need to think out loud.
+        let halfSize: CGFloat = min(bounds.size.width/2, bounds.size.height/2)
+        let desiredLineWidth: CGFloat = 30.0
+        return halfSize - (desiredLineWidth / 2) // we have to calculate this from the arc size..need to think out loud.
     }()
 
     // gives another arc layer to mimic the empty or un-filled state.
