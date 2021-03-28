@@ -16,48 +16,6 @@ protocol CreditScoreExternalInterface {
     func configure(with config: CreditScoreUIInput)
 }
 
-// 1. color scale needs to be implemented
-/*{
- sclae: [ (scale, color), (sclae, color), (scale, color), (scal, color) ],
- value: 860
- }
- */
-
-//struct ColorRangeCalculator {
-//
-//    private var incomingNumber: Double
-//    private var currentColorPallete: UIColor
-//
-//    init(scaleUnit: Double) {
-//        incomingNumber = scaleUnit
-//
-//        // calculate color pallete for the range
-//        if (825...900).contains(incomingNumber) {
-//            // in 825-900 credit score sclae
-//            currentColorPallete = ColorUtils.scale1
-//        } else if (800...824).contains(incomingNumber) {
-//            // in 800-824 credit score sclae
-//            currentColorPallete = ColorUtils.scale2
-//        } else if (775...799).contains(incomingNumber) {
-//            // in 775-799 credit score sclae
-//            currentColorPallete = ColorUtils.scale3
-//        } else if (700...774).contains(incomingNumber) {
-//            // in 700-774 credit score sclae
-//            currentColorPallete = ColorUtils.scale4
-//        } else if (300...699).contains(incomingNumber) {
-//            // in 800-824 credit score sclae
-//            currentColorPallete = ColorUtils.scale5
-//        } else {
-//            currentColorPallete = UIColor.white
-//        }
-//    }
-//
-//    func getStrokeColor() -> UIColor {
-//        return currentColorPallete
-//    }
-//
-//}
-
 // this class is responsible for building credit score circle UI.
 @IBDesignable class CreditScoreUI: UIView, CreditScoreExternalInterface {
     

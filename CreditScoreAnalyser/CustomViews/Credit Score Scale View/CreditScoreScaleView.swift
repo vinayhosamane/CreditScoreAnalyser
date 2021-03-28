@@ -29,6 +29,10 @@ final class CreditScoreScaleView: UIView {
     @IBOutlet weak var markerView: UIView!
     @IBOutlet weak var markerLabel: UILabel!
     
+    @IBOutlet weak var shadowMarkerView: UIView!
+    
+    @IBOutlet weak var triangularView: UIView!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -43,6 +47,26 @@ final class CreditScoreScaleView: UIView {
         super.awakeFromNib()
     }
     
+    // drawing triangular head to marker
+    func setLeftTriangle(){
+        let height = triangularView.frame.size.height
+        let width = triangularView.frame.size.width
+        let path = CGMutablePath()
+        
+        path.move(to: CGPoint(x: width, y: 0))
+        path.addLine(to: CGPoint(x:0, y: height/2))
+        path.addLine(to: CGPoint(x:height/2 + 10, y:height))
+        path.addLine(to: CGPoint(x:height/2 + 10, y:0))
+        
+        let shape = CAShapeLayer()
+        shape.path = path
+        shape.fillColor = UIColor.white.cgColor
+        shape.lineWidth = 1
+        shape.strokeColor = UIColor.black.cgColor
+        
+        triangularView.layer.insertSublayer(shape, at: 0)
+    }
+    
     func configure() {
         guard let view = self.loadViewFromNib(nibName: String(describing: CreditScoreScaleView.self)) else {
             return
@@ -52,10 +76,12 @@ final class CreditScoreScaleView: UIView {
         contentView.frame = self.bounds
         
         // let's add shadow offset to marker
-        markerView.layer.shadowColor = UIColor.black.cgColor
-        markerView.layer.shadowOffset = CGSize(width: 15, height: 15)
-        markerView.layer.shadowRadius = 4
-        markerView.layer.shadowOpacity = 0.2
+        shadowMarkerView.layer.shadowColor = UIColor.black.cgColor
+        shadowMarkerView.layer.shadowOffset = CGSize(width: 10, height: 10)
+        shadowMarkerView.layer.shadowRadius = 2
+        shadowMarkerView.layer.shadowOpacity = 0.2
+        
+        setLeftTriangle()
     }
     
     func configWithValues(with config: CreditScoreScaleViewInput) {
