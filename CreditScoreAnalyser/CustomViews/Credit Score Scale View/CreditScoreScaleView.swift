@@ -26,12 +26,7 @@ final class CreditScoreScaleView: UIView {
     @IBOutlet weak var scaleLabel: UILabel!
     
     
-    @IBOutlet weak var markerView: UIView!
-    @IBOutlet weak var markerLabel: UILabel!
-    
-    @IBOutlet weak var shadowMarkerView: UIView!
-    
-    @IBOutlet weak var triangularView: UIView!
+    @IBOutlet weak var markerView: ScaleMarkerView!
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -47,26 +42,6 @@ final class CreditScoreScaleView: UIView {
         super.awakeFromNib()
     }
     
-    // drawing triangular head to marker
-    func setLeftTriangle(){
-        let height = triangularView.frame.size.height
-        let width = triangularView.frame.size.width
-        
-        let path = UIBezierPath()
-        path.move(to: CGPoint(x: width, y: 0))
-        path.addLine(to: CGPoint(x:0, y: height/2))
-        path.addLine(to: CGPoint(x:height/2, y:height))
-        path.addLine(to: CGPoint(x:height/2, y:0))
-        
-        let shape = CAShapeLayer()
-        shape.path = path.cgPath
-        shape.fillColor = UIColor.white.cgColor
-        shape.lineWidth = 4
-        shape.strokeColor = UIColor.white.cgColor
-        
-        triangularView.layer.insertSublayer(shape, at: 0)
-    }
-    
     func configure() {
         guard let view = self.loadViewFromNib(nibName: String(describing: CreditScoreScaleView.self)) else {
             return
@@ -74,14 +49,6 @@ final class CreditScoreScaleView: UIView {
         contentView = view
         addSubview(contentView)
         contentView.frame = self.bounds
-        
-        // let's add shadow offset to marker
-        shadowMarkerView.layer.shadowColor = UIColor.black.cgColor
-        shadowMarkerView.layer.shadowOffset = CGSize(width: 10, height: 10)
-        shadowMarkerView.layer.shadowRadius = 2
-        shadowMarkerView.layer.shadowOpacity = 0.2
-        
-        setLeftTriangle()
     }
     
     func configWithValues(with config: CreditScoreScaleViewInput) {
@@ -89,14 +56,16 @@ final class CreditScoreScaleView: UIView {
         scaleContainerView.backgroundColor = config.scaleContainerViewBGColor
         scaleLabel.text = config.scaleLabelValue
         if config.shouldShowMarker {
-            markerLabel.text = config.markerLabelText
+            // configure marker view
+            let markerViewInput = ScaleMarkerViewUIInput(bgColor: config.scaleContainerViewBGColor,
+                                                         markerLabeltext: config.markerLabelText ?? "")
+            markerView.config(with: markerViewInput)
+            
         }
-        triangularView.backgroundColor = config.scaleContainerViewBGColor
     }
     
     func hideMarker(hide: Bool) {
         markerView.isHidden = hide
-        markerLabel.isHidden = hide
     }
     
 }

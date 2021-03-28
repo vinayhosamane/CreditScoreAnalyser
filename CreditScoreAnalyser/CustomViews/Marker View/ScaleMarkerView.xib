@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScaleMarkerView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="01p-hL-elZ"/>
+                <outlet property="markerLabel" destination="bfg-eg-0ib" id="5rA-UE-YdQ"/>
+                <outlet property="markerShadowView" destination="UXI-xW-eCV" id="2nF-vC-YrH"/>
+                <outlet property="triangularTipView" destination="103-Y3-DLo" id="Ewk-qy-Rc8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="103-Y3-DLo" userLabel="triangular-tip-view">
+                    <rect key="frame" x="0.0" y="0.0" width="25" height="55"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Bpu-lU-VeT"/>
+                        <constraint firstAttribute="width" constant="25" id="Qxp-am-98Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXI-xW-eCV" userLabel="marker-shadow-view">
+                    <rect key="frame" x="25" y="0.0" width="83" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="800" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfg-eg-0ib" userLabel="marker-label">
+                            <rect key="frame" x="0.0" y="0.0" width="81" height="54"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bfg-eg-0ib" secondAttribute="bottom" constant="1" id="2Un-fu-luY"/>
+                        <constraint firstItem="bfg-eg-0ib" firstAttribute="leading" secondItem="UXI-xW-eCV" secondAttribute="leading" id="9rd-uH-Atx"/>
+                        <constraint firstItem="bfg-eg-0ib" firstAttribute="top" secondItem="UXI-xW-eCV" secondAttribute="top" id="MKG-aJ-zPd"/>
+                        <constraint firstAttribute="trailing" secondItem="bfg-eg-0ib" secondAttribute="trailing" constant="2" id="g1F-A3-l7B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UXI-xW-eCV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MaC-b5-JlW"/>
+                <constraint firstItem="103-Y3-DLo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="PIh-nk-n2U"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UXI-xW-eCV" secondAttribute="bottom" id="U7c-vc-M9b"/>
+                <constraint firstItem="UXI-xW-eCV" firstAttribute="leading" secondItem="103-Y3-DLo" secondAttribute="trailing" id="Wsm-gM-mpW"/>
+                <constraint firstItem="103-Y3-DLo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YOK-Rr-RvU"/>
+                <constraint firstItem="UXI-xW-eCV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q3T-aa-b5f"/>
+                <constraint firstItem="103-Y3-DLo" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="wzo-pZ-6Xb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="50.724637681159422" y="341.85267857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
