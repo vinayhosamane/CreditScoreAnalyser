@@ -68,7 +68,7 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
         shapeLayer.strokeColor = self.strokeColor
         shapeLayer.lineWidth = Constants.strokeLineWidth
         shapeLayer.strokeEnd = Constants.strokeEnd
-        shapeLayer.lineCap = .round
+        shapeLayer.lineCap = .square
 
         return shapeLayer
     }
