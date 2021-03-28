@@ -51,18 +51,18 @@ final class CreditScoreScaleView: UIView {
     func setLeftTriangle(){
         let height = triangularView.frame.size.height
         let width = triangularView.frame.size.width
-        let path = CGMutablePath()
         
+        let path = UIBezierPath()
         path.move(to: CGPoint(x: width, y: 0))
         path.addLine(to: CGPoint(x:0, y: height/2))
-        path.addLine(to: CGPoint(x:height/2 + 10, y:height))
-        path.addLine(to: CGPoint(x:height/2 + 10, y:0))
+        path.addLine(to: CGPoint(x:height/2, y:height))
+        path.addLine(to: CGPoint(x:height/2, y:0))
         
         let shape = CAShapeLayer()
-        shape.path = path
+        shape.path = path.cgPath
         shape.fillColor = UIColor.white.cgColor
-        shape.lineWidth = 1
-        shape.strokeColor = UIColor.black.cgColor
+        shape.lineWidth = 4
+        shape.strokeColor = UIColor.white.cgColor
         
         triangularView.layer.insertSublayer(shape, at: 0)
     }
@@ -91,6 +91,7 @@ final class CreditScoreScaleView: UIView {
         if config.shouldShowMarker {
             markerLabel.text = config.markerLabelText
         }
+        triangularView.backgroundColor = config.scaleContainerViewBGColor
     }
     
     func hideMarker(hide: Bool) {

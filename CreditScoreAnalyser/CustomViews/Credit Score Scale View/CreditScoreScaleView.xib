@@ -49,20 +49,20 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gr7-VR-qtM" userLabel="marker view">
-                            <rect key="frame" x="277" y="0.0" width="122" height="55"/>
+                            <rect key="frame" x="285" y="0.0" width="108" height="55"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xM5-aV-Bdx" userLabel="triangle tip">
-                                    <rect key="frame" x="0.0" y="0.0" width="39" height="55"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="25" height="55"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </view>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1r-Gl-c96" userLabel="shadow marker view">
-                                    <rect key="frame" x="39" y="0.0" width="83" height="54"/>
+                                    <rect key="frame" x="25" y="0.0" width="83" height="54"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="800" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAg-JU-qwn">
-                                            <rect key="frame" x="1" y="0.0" width="81" height="54"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="81" height="54"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                             <nil key="textColor"/>
