@@ -24,6 +24,9 @@
 		3D28C0D726104F6E00341BE3 /* CreditScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0D626104F6E00341BE3 /* CreditScoreModel.swift */; };
 		3D28C0DD26104FA600341BE3 /* CreditScoreCalculatableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0DC26104FA600341BE3 /* CreditScoreCalculatableProtocol.swift */; };
 		3D28C0E62610507C00341BE3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0E52610507C00341BE3 /* UIColor+Extension.swift */; };
+		3D28C0EF2610510B00341BE3 /* CreditScoreUIInputModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0EE2610510B00341BE3 /* CreditScoreUIInputModel.swift */; };
+		3D28C0F82610528900341BE3 /* CreditScoreCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */; };
+		3D28C101261052D500341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
 		3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D47260C77D200A84707 /* AppDelegate.swift */; };
 		3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D49260C77D200A84707 /* SceneDelegate.swift */; };
 		3DE25D4C260C77D200A84707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* ViewController.swift */; };
@@ -71,6 +74,9 @@
 		3D28C0D626104F6E00341BE3 /* CreditScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreModel.swift; sourceTree = "<group>"; };
 		3D28C0DC26104FA600341BE3 /* CreditScoreCalculatableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatableProtocol.swift; sourceTree = "<group>"; };
 		3D28C0E52610507C00341BE3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3D28C0EE2610510B00341BE3 /* CreditScoreUIInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUIInputModel.swift; sourceTree = "<group>"; };
+		3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatorTests.swift; sourceTree = "<group>"; };
+		3D28C100261052D500341BE3 /* MockCreditScoreReport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCreditScoreReport.json; sourceTree = "<group>"; };
 		3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE25D47260C77D200A84707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE25D49260C77D200A84707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +237,31 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		3D28C0ED261050FC00341BE3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3D28C0EE2610510B00341BE3 /* CreditScoreUIInputModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		3D28C0F62610525900341BE3 /* Bussiness Logic Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D28C0FF2610529600341BE3 /* mock json */,
+				3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */,
+			);
+			path = "Bussiness Logic Tests";
+			sourceTree = "<group>";
+		};
+		3D28C0FF2610529600341BE3 /* mock json */ = {
+			isa = PBXGroup;
+			children = (
+				3D28C100261052D500341BE3 /* MockCreditScoreReport.json */,
+			);
+			path = "mock json";
+			sourceTree = "<group>";
+		};
 		3DE25D3B260C77D200A84707 = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +305,7 @@
 		3DE25D60260C77D500A84707 /* CreditScoreAnalyserTests */ = {
 			isa = PBXGroup;
 			children = (
+				3D28C0F62610525900341BE3 /* Bussiness Logic Tests */,
 				3DE25D61260C77D500A84707 /* CreditScoreAnalyserTests.swift */,
 				3DE25D63260C77D500A84707 /* Info.plist */,
 			);
@@ -292,6 +324,7 @@
 		3DE25D7D260C78C200A84707 /* CreditScoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				3D28C0ED261050FC00341BE3 /* model */,
 				3DE25D7F260C791000A84707 /* CreditScoreUI.swift */,
 			);
 			path = CreditScoreUI;
@@ -414,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D28C101261052D500341BE3 /* MockCreditScoreReport.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +470,7 @@
 				3DE25D80260C791000A84707 /* CreditScoreUI.swift in Sources */,
 				3D28C0E62610507C00341BE3 /* UIColor+Extension.swift in Sources */,
 				3D184494260E2B2D0003504F /* FontUtils.swift in Sources */,
+				3D28C0EF2610510B00341BE3 /* CreditScoreUIInputModel.swift in Sources */,
 				3D28C0CE26104F1800341BE3 /* CreditScoreScaleViewInputModel.swift in Sources */,
 				3D28C0C526104ED800341BE3 /* ScaleMarkerViewUIInputModel.swift in Sources */,
 				3DE25D4C260C77D200A84707 /* ViewController.swift in Sources */,
@@ -456,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D28C0F82610528900341BE3 /* CreditScoreCalculatorTests.swift in Sources */,
 				3DE25D62260C77D500A84707 /* CreditScoreAnalyserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

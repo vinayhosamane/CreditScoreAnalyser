@@ -7,17 +7,13 @@
 import UIKit
 import Foundation
 
-struct CreditScoreUIInput {
-    var score: Double
-    var color: UIColor
-}
-
 protocol CreditScoreExternalInterface {
     func configure(with config: CreditScoreUIInput)
 }
 
 // this class is responsible for building credit score circle UI.
-@IBDesignable class CreditScoreUI: UIView, CreditScoreExternalInterface {
+@IBDesignable
+final class CreditScoreUI: UIView, CreditScoreExternalInterface {
     
     private var strokeColor = ColorUtils.strokeColor
     
@@ -90,9 +86,6 @@ protocol CreditScoreExternalInterface {
         layer.cornerRadius = frame.width / 2
 
         // let add circle and it's mask to the layer.
-        
-//        circleLayer.fillColor = UIColor.clear.cgColor
-//        maskLayer.fillColor = UIColor.clear.cgColor
         let belowLayer = maskLayer(frame, radius, startAngle, endAngle)
         let strokeLayer = circleLayer(frame, radius, startAngle, endAngle)
 
@@ -127,8 +120,7 @@ protocol CreditScoreExternalInterface {
     }
     
     func configure(with config: CreditScoreUIInput) {
-        // configure score and colore from here.
-                    // set credit score in the view state and re-draw the view.
+        // set credit score in the view state and re-draw the view.
         myCreditScore = CGFloat(config.score / Constants.creditScoreScale)
         strokeColor = config.color.cgColor
         creditScore = CGFloat(config.score)

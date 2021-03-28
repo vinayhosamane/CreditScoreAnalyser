@@ -14,15 +14,15 @@ class CreditScoreCalculator: CreditScoreCalculatable {
     var creditScoreReport: CreditScore? = nil
     
     // let's write code to get the json from bundle
-    init() {
-        deSerializeJsonFile()
+    init(with jsonFileName: String) {
+        deSerializeJsonFile(for: jsonFileName)
     }
     
     // datat processor
-    private func deSerializeJsonFile() {
+    private func deSerializeJsonFile(for json: String) {
         // get json data from bundle
         do {
-            if let jsonPath = Bundle.main.path(forResource: "SampleCreditScoreReport", ofType: "json"),
+            if let jsonPath = Bundle.main.path(forResource: json, ofType: "json"),
                let jsonData = try String(contentsOfFile: jsonPath).data(using: .utf8) {
                 creditScoreReport = try JSONDecoder().decode(CreditScore.self, from: jsonData)
             }

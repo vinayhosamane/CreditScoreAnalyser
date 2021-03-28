@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // process json credit score report
-        creditScoreReport = CreditScoreCalculator()
+        creditScoreReport = CreditScoreCalculator(with: "SampleCreditScoreReport")
         
         guard let report = creditScoreReport else {
             return
