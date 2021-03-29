@@ -8,7 +8,7 @@
 import UIKit
 
 // View controller responsible for showing credit score chart and it's details.
-class CreditScoreAnalyserController: UIViewController {
+class CreditScoreAnalyserController: UIViewController, ActionDelegate {
     
     // circle view
     @IBOutlet weak var creditScoreCircleView: CreditScoreUI!
@@ -52,6 +52,9 @@ class CreditScoreAnalyserController: UIViewController {
         // update credit score.
         creditScoreCircleView.configure(with: CreditScoreUIInput(score: report.getCreditScore(),
                                                                  color: report.getCreditScoreColor() ?? .white))
+        
+        // configure search score view
+        searchScoreView.configure(with: self)
         
         addCenterLabelToMaskView()
 
@@ -99,6 +102,26 @@ class CreditScoreAnalyserController: UIViewController {
         label.isHidden = false
         circleMaskView.addSubview(label)
         circleMaskView.setNeedsDisplay()
+    }
+    
+    func searchButtonClicked() {
+        // search button clicked.
+        let alertController = UIAlertController(title: "Alert", message: "See My Score Analysis", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
+            print("OK clicked")
+        }
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func infoIconClicked(_ sender: Any) {
+        // user clicked on info icon in 'where you stand' view.
+        let alertController = UIAlertController(title: "Alert", message: "Where you stand information", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
+            print("OK clicked")
+        }
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
     }
 
 }

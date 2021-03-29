@@ -88,42 +88,42 @@
                                     <constraint firstAttribute="height" constant="56" id="AZo-E3-DFe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-Gu-JoP">
-                                <rect key="frame" x="525" y="130" width="678" height="528"/>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-Gu-JoP">
+                                <rect key="frame" x="525" y="130" width="691" height="528"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dtc-BW-nzK">
-                                        <rect key="frame" x="20" y="148" width="638" height="360"/>
+                                        <rect key="frame" x="20" y="148" width="651" height="360"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-o4-ax1" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="638" height="68"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="651" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="r4r-8g-Fyx"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6z-ht-5of" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="73" width="638" height="68"/>
+                                                <rect key="frame" x="0.0" y="73" width="651" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="2Nh-R7-Alq"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-I4-2qr" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="146" width="638" height="68"/>
+                                                <rect key="frame" x="0.0" y="146" width="651" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="kz9-jB-J1F"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhG-6y-fjQ" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="219" width="638" height="68"/>
+                                                <rect key="frame" x="0.0" y="219" width="651" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="dqe-mc-59F"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og1-re-66F" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="292" width="638" height="68"/>
+                                                <rect key="frame" x="0.0" y="292" width="651" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="HQZ-iy-FFQ"/>
@@ -153,9 +153,8 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where you stand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhu-FZ-hiW">
-                                                <rect key="frame" x="99" y="22" width="315.5" height="60"/>
+                                                <rect key="frame" x="99" y="22" width="309" height="60"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="315.5" id="AeY-6N-q9X"/>
                                                     <constraint firstAttribute="height" constant="60" id="UQF-CM-4fZ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="44"/>
@@ -163,7 +162,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJC-ul-tUU">
-                                                <rect key="frame" x="410" y="20" width="32" height="30"/>
+                                                <rect key="frame" x="409.5" y="20" width="32" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="32" id="0H7-Ia-OOP"/>
                                                     <constraint firstAttribute="height" constant="30" id="7hA-7b-Qtw"/>
@@ -172,6 +171,9 @@
                                                 <state key="normal">
                                                     <imageReference key="image" image="info.circle.fill" catalog="system" symbolScale="large"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="infoIconClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TC4-db-hXA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -181,11 +183,10 @@
                                             <constraint firstItem="Yhu-FZ-hiW" firstAttribute="top" secondItem="rSp-Yq-bd2" secondAttribute="top" constant="22" id="F4X-kp-40f"/>
                                             <constraint firstAttribute="bottom" secondItem="8Q8-sA-VaQ" secondAttribute="bottom" constant="11.5" id="LmT-t7-Jy5"/>
                                             <constraint firstItem="AJC-ul-tUU" firstAttribute="top" secondItem="rSp-Yq-bd2" secondAttribute="top" constant="20" symbolic="YES" id="MAQ-cc-BBM"/>
-                                            <constraint firstItem="AJC-ul-tUU" firstAttribute="leading" secondItem="Yhu-FZ-hiW" secondAttribute="trailing" constant="-4.5" id="QsZ-tM-2Do"/>
+                                            <constraint firstItem="AJC-ul-tUU" firstAttribute="leading" secondItem="Yhu-FZ-hiW" secondAttribute="trailing" constant="1.5" id="QsZ-tM-2Do"/>
                                             <constraint firstAttribute="bottom" secondItem="Yhu-FZ-hiW" secondAttribute="bottom" constant="16" id="VZa-nX-v8D"/>
                                             <constraint firstItem="8Q8-sA-VaQ" firstAttribute="leading" secondItem="rSp-Yq-bd2" secondAttribute="leading" constant="8" id="l4X-vn-B8L"/>
                                             <constraint firstItem="8Q8-sA-VaQ" firstAttribute="top" secondItem="rSp-Yq-bd2" secondAttribute="top" constant="17.5" id="o69-TG-VTC"/>
-                                            <constraint firstAttribute="height" constant="98" id="uxF-Zz-2EJ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -213,7 +214,7 @@
                             <constraint firstItem="tsl-x3-vzW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Cfo-dx-9Ne"/>
                             <constraint firstItem="4Rm-Gu-JoP" firstAttribute="leading" secondItem="orH-IZ-OtU" secondAttribute="trailing" constant="35" id="GwY-xd-8ME"/>
                             <constraint firstItem="rMA-St-mfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="NNR-h4-bKc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rm-Gu-JoP" secondAttribute="trailing" constant="163" id="QWF-ZL-azx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rm-Gu-JoP" secondAttribute="trailing" constant="150" id="QWF-ZL-azx"/>
                             <constraint firstItem="orH-IZ-OtU" firstAttribute="trailing" secondItem="g9x-EM-Kei" secondAttribute="trailing" id="Tuh-N4-yPT"/>
                             <constraint firstItem="tsl-x3-vzW" firstAttribute="height" secondItem="Zob-89-GnJ" secondAttribute="height" id="WZo-oq-sCi"/>
                             <constraint firstItem="Zob-89-GnJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="XaT-9j-Daw"/>

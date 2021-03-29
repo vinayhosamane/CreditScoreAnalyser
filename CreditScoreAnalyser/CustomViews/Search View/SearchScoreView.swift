@@ -8,12 +8,19 @@
 import Foundation
 import UIKit
 
+protocol ActionDelegate: class {
+    func searchButtonClicked()
+}
+
 @IBDesignable
 final class SearchScoreView: UIView {
     
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var searchLabel: BaselineAlignedLabel!
     @IBOutlet weak var searchIcon: UIImageView!
+    @IBOutlet weak var searchButton: UIButton!
+    
+    weak var delegate: ActionDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,7 +36,11 @@ final class SearchScoreView: UIView {
         super.awakeFromNib()
     }
     
-    func configure() {
+    @IBAction func searchButtonClicked(_ sender: Any) {
+        delegate?.searchButtonClicked()
+    }
+    
+    func configure(with delegate: ActionDelegate? = nil) {
         guard let view = self.loadViewFromNib(nibName: String(describing: SearchScoreView.self)) else {
             return
         }
@@ -43,6 +54,10 @@ final class SearchScoreView: UIView {
         
         searchLabel.attributedText = attributedString
         searchLabel.sizeToFit()
+        
+        self.delegate = delegate
+        
+        view.bringSubviewToFront(searchButton)
     }
     
 }

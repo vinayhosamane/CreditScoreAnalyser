@@ -45,15 +45,20 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gr7-VR-qtM" userLabel="marker view" customClass="ScaleMarkerView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                            <rect key="frame" x="285" y="0.0" width="108" height="55"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gr7-VR-qtM" userLabel="marker view" customClass="ScaleMarkerView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                            <rect key="frame" x="215" y="0.0" width="108" height="55"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="108" id="s2O-iY-sVS"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.26274509800000001" green="0.43137254899999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Gr7-VR-qtM" secondAttribute="bottom" id="2H1-1z-nB3"/>
                         <constraint firstAttribute="height" constant="55" id="Uo8-bu-VLO"/>
+                        <constraint firstItem="Gr7-VR-qtM" firstAttribute="centerX" secondItem="cWh-jf-vkE" secondAttribute="centerX" id="WTD-5B-K8o"/>
+                        <constraint firstItem="Gr7-VR-qtM" firstAttribute="top" secondItem="cWh-jf-vkE" secondAttribute="top" id="YVV-8L-LZJ"/>
                         <constraint firstItem="EsK-RO-djo" firstAttribute="top" secondItem="cWh-jf-vkE" secondAttribute="top" constant="8" id="feg-AY-63r"/>
                         <constraint firstItem="EsK-RO-djo" firstAttribute="leading" secondItem="cWh-jf-vkE" secondAttribute="leading" constant="31" id="p9y-wp-fWt"/>
                         <constraint firstAttribute="bottom" secondItem="EsK-RO-djo" secondAttribute="bottom" constant="8" id="rg0-fU-HiR"/>

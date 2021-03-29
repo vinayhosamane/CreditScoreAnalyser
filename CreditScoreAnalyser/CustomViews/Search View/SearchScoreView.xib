@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchScoreView" customModule="CreditScoreAnalyser" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="Cic-wn-0ei"/>
+                <outlet property="searchButton" destination="T06-cX-Fwu" id="dNF-Ja-EOQ"/>
                 <outlet property="searchIcon" destination="F0r-9a-kfS" id="QGV-vg-AHV"/>
                 <outlet property="searchLabel" destination="7Ma-HF-XoA" id="21u-Ne-gtg"/>
             </connections>
@@ -33,20 +34,30 @@
                         <constraint firstAttribute="width" constant="24" id="eCY-Ju-lkn"/>
                     </constraints>
                 </imageView>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T06-cX-Fwu">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="56"/>
+                    <connections>
+                        <action selector="searchButtonClicked:" destination="-1" eventType="touchUpInside" id="GYV-9d-Lk3"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="T06-cX-Fwu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Cjm-hA-Mli"/>
                 <constraint firstItem="7Ma-HF-XoA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="Mr4-NQ-81f"/>
+                <constraint firstItem="T06-cX-Fwu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WBg-ep-ryh"/>
                 <constraint firstItem="7Ma-HF-XoA" firstAttribute="leading" secondItem="F0r-9a-kfS" secondAttribute="trailing" constant="8.5" id="Yto-4V-psW"/>
                 <constraint firstItem="F0r-9a-kfS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="bB2-p6-g5D"/>
                 <constraint firstAttribute="trailing" secondItem="7Ma-HF-XoA" secondAttribute="trailing" constant="31" id="ds0-ET-KT6"/>
+                <constraint firstItem="T06-cX-Fwu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f1w-GZ-4H4"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="F0r-9a-kfS" secondAttribute="bottom" constant="16" id="f6y-fe-zu3"/>
                 <constraint firstItem="F0r-9a-kfS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="g5h-fP-z8n"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7Ma-HF-XoA" secondAttribute="bottom" constant="10" id="sCD-Zy-LuR"/>
+                <constraint firstItem="T06-cX-Fwu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="v26-KU-y8n"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-7.2463768115942031" y="-177.45535714285714"/>
+            <point key="canvasLocation" x="-4" y="-188"/>
         </view>
     </objects>
     <designables>
