@@ -24,6 +24,8 @@ class CreditScoreAnalyserController: UIViewController {
     @IBOutlet weak var lowestScaleView: CreditScoreScaleView!
     @IBOutlet weak var circleMaskView: UIView!
     
+    var viewsMap: [CreditScoreScaleView] = []
+    
     // credit score model
     var creditScoreReport: CreditScoreCalculatable?
     
@@ -37,6 +39,8 @@ class CreditScoreAnalyserController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // map of all scle views
+        viewsMap = [highestScaleView, higherScaleView, mediumScaleView, lowScaleView, lowestScaleView]
         
         // process json credit score report
         creditScoreReport = CreditScoreCalculator(with: "SampleCreditScoreReport")
@@ -51,68 +55,32 @@ class CreditScoreAnalyserController: UIViewController {
         
         addCenterLabelToMaskView()
 
-        // 1. set scale colors from the report
         guard let scales = report.getCreditScoreScales() else {
             return
         }
-        if !scales.isEmpty && scales.count == 5 {
-            // highest scale
-            let highestScale = scales[0]
-            let shouldShowMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: highestScale)
-            highestScaleView.hideMarker(hide: !shouldShowMarker)
-            let highestMarkerLabeltext = "\(Int(report.getCreditScore()))"
-            let hightScaleInput = CreditScoreScaleViewInput(percentageValue: highestScale.percentile,
-                                                            scaleContainerViewBGColor: UIColor(hexRGB: highestScale.colorHex) ?? .white,
-                                                            scaleLabelValue: "\(highestScale.min) - \(highestScale.max)", shouldShowMarker: shouldShowMarker,
-                                                            markerLabelText: shouldShowMarker ? highestMarkerLabeltext : nil)
-            highestScaleView.configWithValues(with: hightScaleInput)
-            
-            // higher scale
-            let higherScale = scales[1]
-            let shouldShowHigherMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: higherScale)
-            higherScaleView.hideMarker(hide: !shouldShowHigherMarker)
-            let higherMarkerLabeltext = "\(Int(report.getCreditScore()))"
-            let higherScaleInput = CreditScoreScaleViewInput(percentageValue: higherScale.percentile,
-                                                            scaleContainerViewBGColor: UIColor(hexRGB: higherScale.colorHex) ?? .white,
-                                                            scaleLabelValue: "\(higherScale.min) - \(higherScale.max)", shouldShowMarker: shouldShowHigherMarker,
-                                                            markerLabelText: shouldShowHigherMarker ? higherMarkerLabeltext : nil)
-            higherScaleView.configWithValues(with: higherScaleInput)
-            
-            // moderate scale
-            let moderateScale = scales[2]
-            let shouldShowModerateMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: moderateScale)
-            mediumScaleView.hideMarker(hide: !shouldShowModerateMarker)
-            let moderateMarkerLabeltext = "\(Int(report.getCreditScore()))"
-            let moderateScaleInout = CreditScoreScaleViewInput(percentageValue: moderateScale.percentile,
-                                                            scaleContainerViewBGColor: UIColor(hexRGB: moderateScale.colorHex) ?? .white,
-                                                            scaleLabelValue: "\(moderateScale.min) - \(moderateScale.max)", shouldShowMarker: shouldShowModerateMarker,
-                                                            markerLabelText: shouldShowModerateMarker ? moderateMarkerLabeltext : nil)
-            mediumScaleView.configWithValues(with: moderateScaleInout)
-            
-            // low scale
-            let lowScale = scales[3]
-            let shouldShowLowMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: lowScale)
-            lowScaleView.hideMarker(hide: !shouldShowLowMarker)
-            let lowMarkerLabeltext = "\(Int(report.getCreditScore()))"
-            let lowScaleInput = CreditScoreScaleViewInput(percentageValue: lowScale.percentile,
-                                                            scaleContainerViewBGColor: UIColor(hexRGB: lowScale.colorHex) ?? .white,
-                                                            scaleLabelValue: "\(lowScale.min) - \(lowScale.max)", shouldShowMarker: shouldShowLowMarker,
-                                                            markerLabelText: shouldShowLowMarker ? lowMarkerLabeltext : nil)
-            lowScaleView.configWithValues(with: lowScaleInput)
-            
-            // lowest scale
-            let lowestScale = scales[4]
-            let shouldShowLowestMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: lowestScale)
-            lowestScaleView.hideMarker(hide: !shouldShowLowestMarker)
-            let lowestMarkerLabeltext = "\(Int(report.getCreditScore()))"
-            let lowestScaleInput = CreditScoreScaleViewInput(percentageValue: lowestScale.percentile,
-                                                            scaleContainerViewBGColor: UIColor(hexRGB: lowestScale.colorHex) ?? .white,
-                                                            scaleLabelValue: "\(lowestScale.min) - \(lowestScale.max)", shouldShowMarker: shouldShowLowestMarker,
-                                                            markerLabelText: shouldShowLowestMarker ? lowestMarkerLabeltext : nil)
-            lowestScaleView.configWithValues(with: lowestScaleInput)
-            
+        if !scales.isEmpty {
+            // loop through scales and configure them.
+            scales.enumerated().forEach { (index, scale: Scale) in
+                // let's configure
+                configureScaleView(forScale: scale, forView: viewsMap[index])
+            }
         }
         
+    }
+    
+    func configureScaleView(forScale scale: Scale, forView view: CreditScoreScaleView) {
+        guard let report = creditScoreReport else {
+            return
+        }
+        
+        let shouldShowMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: scale)
+        view.hideMarker(hide: !shouldShowMarker)
+        let markerLabelText = "\(Int(report.getCreditScore()))"
+        let scaleInput = CreditScoreScaleViewInput(percentageValue: scale.percentile,
+                                                        scaleContainerViewBGColor: UIColor(hexRGB: scale.colorHex) ?? .white,
+                                                        scaleLabelValue: "\(scale.min) - \(scale.max)", shouldShowMarker: shouldShowMarker,
+                                                        markerLabelText: shouldShowMarker ? markerLabelText : nil)
+        view.configWithValues(with: scaleInput)
     }
     
     func addCenterLabelToMaskView() {
