@@ -41,7 +41,7 @@ final class ScaleMarkerView: UIView {
         
         // let's add shadow offset to marker
         markerShadowView.layer.shadowColor = UIColor.black.cgColor
-        markerShadowView.layer.shadowOffset = CGSize(width: 10, height: 25)
+        markerShadowView.layer.shadowOffset = CGSize(width: 10, height: 20)
         markerShadowView.layer.shadowRadius = 2
         markerShadowView.layer.shadowOpacity = 0.2
         

@@ -18,21 +18,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-89-GnJ" userLabel="CreditScore Circle View" customClass="CircleUI" customModule="CreditScoreAnalyser">
-                                <rect key="frame" x="120" y="271" width="280" height="280"/>
+                                <rect key="frame" x="119" y="271" width="280" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="D7P-mp-OXe"/>
                                     <constraint firstAttribute="width" constant="280" id="jK3-bg-q4G"/>
+                                    <constraint firstAttribute="width" secondItem="Zob-89-GnJ" secondAttribute="height" multiplier="1:1" id="sEl-Si-l0R"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sEl-Si-l0R"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="sEl-Si-l0R"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="orH-IZ-OtU" userLabel="vertical separator">
-                                <rect key="frame" x="489" y="72" width="1" height="838"/>
+                                <rect key="frame" x="482" y="72" width="1" height="838"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="BiQ-Xe-AQG"/>
+                                    <constraint firstAttribute="height" constant="838" id="Xfg-oi-ZmZ"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Xfg-oi-ZmZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="Xfg-oi-ZmZ"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="As of 28/03/2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tf-ae-qsv">
-                                <rect key="frame" x="120" y="587" width="280" height="27.5"/>
+                                <rect key="frame" x="169" y="587" width="180" height="27.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27.5" id="lTU-Tr-SJl"/>
                                 </constraints>
@@ -40,16 +62,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-EM-Kei" userLabel="horizonntal separator">
-                                <rect key="frame" x="36" y="644" width="454" height="1"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9x-EM-Kei" userLabel="horizontal separator">
+                                <rect key="frame" x="36" y="644" width="447" height="1"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="454" id="1T5-qJ-0kp"/>
                                     <constraint firstAttribute="height" constant="1" id="THy-XX-sdL"/>
                                 </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="1T5-qJ-0kp"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-St-mfL" userLabel="search view" customClass="SearchScoreView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                <rect key="frame" x="82" y="660" width="326" height="56"/>
+                                <rect key="frame" x="96" y="660" width="326" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="326" id="1VU-15-ID7"/>
@@ -57,41 +84,41 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="4Rm-Gu-JoP" userLabel="scale container">
-                                <rect key="frame" x="525" y="130" width="691" height="528"/>
+                                <rect key="frame" x="583" y="130" width="683" height="528"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dtc-BW-nzK">
-                                        <rect key="frame" x="20" y="148" width="651" height="360"/>
+                                        <rect key="frame" x="20" y="148" width="643" height="360"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-o4-ax1" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="651" height="68"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="r4r-8g-Fyx"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6z-ht-5of" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="73" width="651" height="68"/>
+                                                <rect key="frame" x="0.0" y="73" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="2Nh-R7-Alq"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-I4-2qr" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="146" width="651" height="68"/>
+                                                <rect key="frame" x="0.0" y="146" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="kz9-jB-J1F"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhG-6y-fjQ" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="219" width="651" height="68"/>
+                                                <rect key="frame" x="0.0" y="219" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="dqe-mc-59F"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og1-re-66F" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="292" width="651" height="68"/>
+                                                <rect key="frame" x="0.0" y="292" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="HQZ-iy-FFQ"/>
@@ -175,21 +202,55 @@
                         <constraints>
                             <constraint firstItem="g9x-EM-Kei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="1wc-ys-ScO"/>
                             <constraint firstItem="2tf-ae-qsv" firstAttribute="top" secondItem="Zob-89-GnJ" secondAttribute="bottom" constant="36" id="2sR-DF-K0o"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="orH-IZ-OtU" secondAttribute="bottom" constant="94" id="3Q8-Ri-bZ7"/>
                             <constraint firstItem="g9x-EM-Kei" firstAttribute="top" secondItem="2tf-ae-qsv" secondAttribute="bottom" constant="29.5" id="5m1-z2-Af7"/>
                             <constraint firstItem="rMA-St-mfL" firstAttribute="top" secondItem="g9x-EM-Kei" secondAttribute="bottom" constant="15" id="6YH-OX-wwW"/>
+                            <constraint firstItem="orH-IZ-OtU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="72" id="E50-16-xKv"/>
                             <constraint firstItem="4Rm-Gu-JoP" firstAttribute="leading" secondItem="orH-IZ-OtU" secondAttribute="trailing" constant="35" id="GwY-xd-8ME"/>
-                            <constraint firstItem="rMA-St-mfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="NNR-h4-bKc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rm-Gu-JoP" secondAttribute="trailing" constant="150" id="QWF-ZL-azx"/>
+                            <constraint firstItem="rMA-St-mfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="NNR-h4-bKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rm-Gu-JoP" secondAttribute="trailing" priority="999" constant="10" id="QWF-ZL-azx"/>
                             <constraint firstItem="orH-IZ-OtU" firstAttribute="trailing" secondItem="g9x-EM-Kei" secondAttribute="trailing" id="Tuh-N4-yPT"/>
                             <constraint firstItem="Zob-89-GnJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="271" id="XaT-9j-Daw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g9x-EM-Kei" secondAttribute="trailing" constant="856" id="Zf1-aC-h27"/>
                             <constraint firstAttribute="bottomMargin" secondItem="orH-IZ-OtU" secondAttribute="bottom" constant="94" id="cFu-xE-E00"/>
+                            <constraint firstItem="2tf-ae-qsv" firstAttribute="centerX" secondItem="Zob-89-GnJ" secondAttribute="centerX" id="cUc-j3-hHm"/>
+                            <constraint firstItem="orH-IZ-OtU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zob-89-GnJ" secondAttribute="trailing" constant="10" id="f4r-91-ILL">
+                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                            </constraint>
+                            <constraint firstItem="4Rm-Gu-JoP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="orH-IZ-OtU" secondAttribute="trailing" constant="100" id="hYH-kh-bBu"/>
                             <constraint firstItem="4Rm-Gu-JoP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="kB4-QI-xBS"/>
-                            <constraint firstItem="orH-IZ-OtU" firstAttribute="leading" secondItem="2tf-ae-qsv" secondAttribute="trailing" constant="89" id="kFl-lE-2qa"/>
+                            <constraint firstItem="orH-IZ-OtU" firstAttribute="leading" secondItem="2tf-ae-qsv" secondAttribute="trailing" constant="133" id="kFl-lE-2qa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Rm-Gu-JoP" secondAttribute="trailing" constant="100" id="kMI-g3-ej1"/>
+                            <constraint firstItem="4Rm-Gu-JoP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="mwy-NQ-sdf"/>
                             <constraint firstItem="orH-IZ-OtU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="72" id="vJT-js-PfG"/>
-                            <constraint firstItem="Zob-89-GnJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="wmk-75-sud"/>
+                            <constraint firstItem="Zob-89-GnJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="wmk-75-sud"/>
                             <constraint firstItem="2tf-ae-qsv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="y2U-0J-iMy"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Q8-Ri-bZ7"/>
+                                <exclude reference="E50-16-xKv"/>
+                                <exclude reference="f4r-91-ILL"/>
+                                <exclude reference="cUc-j3-hHm"/>
+                                <exclude reference="hYH-kh-bBu"/>
+                                <exclude reference="mwy-NQ-sdf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="3Q8-Ri-bZ7"/>
+                                <include reference="E50-16-xKv"/>
+                                <exclude reference="cFu-xE-E00"/>
+                                <include reference="f4r-91-ILL"/>
+                                <exclude reference="vJT-js-PfG"/>
+                                <include reference="cUc-j3-hHm"/>
+                                <exclude reference="y2U-0J-iMy"/>
+                                <exclude reference="Zf1-aC-h27"/>
+                                <exclude reference="GwY-xd-8ME"/>
+                                <include reference="hYH-kh-bBu"/>
+                                <include reference="mwy-NQ-sdf"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="creditScoreCircleView" destination="Zob-89-GnJ" id="H0p-Fd-cwX"/>
