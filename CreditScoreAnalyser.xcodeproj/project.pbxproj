@@ -28,6 +28,8 @@
 		3D28C0F82610528900341BE3 /* CreditScoreCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */; };
 		3D28C101261052D500341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
 		3D28C11726105C7A00341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
+		3DB349322611C717005C1604 /* CircleUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB349312611C716005C1604 /* CircleUI.xib */; };
+		3DB349362611C723005C1604 /* CircleUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB349352611C723005C1604 /* CircleUI.swift */; };
 		3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D47260C77D200A84707 /* AppDelegate.swift */; };
 		3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D49260C77D200A84707 /* SceneDelegate.swift */; };
 		3DE25D4C260C77D200A84707 /* CreditScoreAnalyserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* CreditScoreAnalyserController.swift */; };
@@ -91,6 +93,8 @@
 		3D28C0EE2610510B00341BE3 /* CreditScoreUIInputModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreUIInputModel.swift; sourceTree = "<group>"; };
 		3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatorTests.swift; sourceTree = "<group>"; };
 		3D28C100261052D500341BE3 /* MockCreditScoreReport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCreditScoreReport.json; sourceTree = "<group>"; };
+		3DB349312611C716005C1604 /* CircleUI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleUI.xib; sourceTree = "<group>"; };
+		3DB349352611C723005C1604 /* CircleUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleUI.swift; sourceTree = "<group>"; };
 		3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE25D47260C77D200A84707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE25D49260C77D200A84707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -340,6 +344,8 @@
 			children = (
 				3D28C0ED261050FC00341BE3 /* model */,
 				3DE25D7F260C791000A84707 /* CreditScoreUI.swift */,
+				3DB349312611C716005C1604 /* CircleUI.xib */,
+				3DB349352611C723005C1604 /* CircleUI.swift */,
 			);
 			path = "Circle UI";
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE25D57260C77D400A84707 /* LaunchScreen.storyboard in Resources */,
+				3DB349322611C717005C1604 /* CircleUI.xib in Resources */,
 				3D18449E260ECC190003504F /* SampleCreditScoreReport.json in Resources */,
 				3DE25D54260C77D400A84707 /* Assets.xcassets in Resources */,
 				3DE25D4F260C77D200A84707 /* Main.storyboard in Resources */,
@@ -490,6 +497,7 @@
 				3D28C0CE26104F1800341BE3 /* CreditScoreScaleViewInputModel.swift in Sources */,
 				3D28C0C526104ED800341BE3 /* ScaleMarkerViewUIInputModel.swift in Sources */,
 				3DE25D4C260C77D200A84707 /* CreditScoreAnalyserController.swift in Sources */,
+				3DB349362611C723005C1604 /* CircleUI.swift in Sources */,
 				3D18448C260E2B080003504F /* ColorUtils.swift in Sources */,
 				3D1844A4260ECC620003504F /* CreditScoreCalculator.swift in Sources */,
 				3D28C0D726104F6E00341BE3 /* CreditScoreModel.swift in Sources */,

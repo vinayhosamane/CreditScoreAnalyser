@@ -37,7 +37,7 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
     private lazy var radius: CGFloat = {
         let halfSize: CGFloat = min(bounds.size.width/2, bounds.size.height/2)
         let desiredLineWidth: CGFloat = 30.0
-        return halfSize - (desiredLineWidth / 2) // we have to calculate this from the arc size..need to think out loud.
+        return halfSize - (desiredLineWidth / 2) - 4.0 // we have to calculate this from the arc size..need to think out loud.
     }()
 
     // gives another arc layer to mimic the empty or un-filled state.
@@ -95,16 +95,6 @@ final class CreditScoreUI: UIView, CreditScoreExternalInterface {
         
         // stroked circle
         self.layer.addSublayer(strokeLayer)
-        
-        // add center text
-        let textLayer = CATextLayer()
-        textLayer.string = "\(Int(creditScore))"
-        textLayer.foregroundColor = ColorUtils.strokeColor
-        textLayer.font = FontUtils.centerTextFont
-        textLayer.alignmentMode = .center
-        textLayer.frame = CGRect(x: frame.origin.x, y: frame.origin.y + frame.height / 2 - 15, width: frame.width, height: Constants.centerTextHeight)
-        textLayer.contentsScale = UIScreen.main.scale
-        self.layer.addSublayer(textLayer)
         
         // let's add some animation
         let animation = CABasicAnimation(keyPath: "strokeEnd")

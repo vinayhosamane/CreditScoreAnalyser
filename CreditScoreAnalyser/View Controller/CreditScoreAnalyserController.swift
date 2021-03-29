@@ -11,7 +11,7 @@ import UIKit
 class CreditScoreAnalyserController: UIViewController, ActionDelegate {
     
     // circle view
-    @IBOutlet weak var creditScoreCircleView: CreditScoreUI!
+    @IBOutlet weak var creditScoreCircleView: CircleUI!
     
     // search score view
     @IBOutlet weak var searchScoreView: SearchScoreView!
@@ -22,7 +22,6 @@ class CreditScoreAnalyserController: UIViewController, ActionDelegate {
     @IBOutlet weak var mediumScaleView: CreditScoreScaleView!
     @IBOutlet weak var lowScaleView: CreditScoreScaleView!
     @IBOutlet weak var lowestScaleView: CreditScoreScaleView!
-    @IBOutlet weak var circleMaskView: UIView!
     
     var viewsMap: [CreditScoreScaleView] = []
     
@@ -55,8 +54,6 @@ class CreditScoreAnalyserController: UIViewController, ActionDelegate {
         
         // configure search score view
         searchScoreView.configure(with: self)
-        
-        addCenterLabelToMaskView()
 
         guard let scales = report.getCreditScoreScales() else {
             return
@@ -93,15 +90,15 @@ class CreditScoreAnalyserController: UIViewController, ActionDelegate {
         // let's add center text to the circle.
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 40.0, weight: .heavy)
-        label.frame = CGRect(x: circleMaskView.bounds.origin.x + circleMaskView.bounds.size.width / 2 - 40,
-                             y: circleMaskView.bounds.origin.y + circleMaskView.bounds.size.height / 2 - 40,
+        label.frame = CGRect(x: creditScoreCircleView.bounds.origin.x + creditScoreCircleView.bounds.size.width / 2 - 40,
+                             y: creditScoreCircleView.bounds.origin.y + creditScoreCircleView.bounds.size.height / 2 - 40,
                              width: 100,
                              height: 100)
         label.text = "\(Int(report.getCreditScore()))"
         label.textColor = report.getCreditScoreColor() ?? .red
         label.isHidden = false
-        circleMaskView.addSubview(label)
-        circleMaskView.setNeedsDisplay()
+        creditScoreCircleView.addSubview(label)
+        creditScoreCircleView.setNeedsDisplay()
     }
     
     func searchButtonClicked() {
