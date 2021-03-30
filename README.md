@@ -2,6 +2,8 @@
 
 A Sample UI application, which shows user's credit score by reading data from json.
 
+Note: CustomUI framework has been added into the workspace. Please checkout the code to debug or read the code.
+
 ### Case study:
 
 * Developer should create the sample UI application with all necessary features.
