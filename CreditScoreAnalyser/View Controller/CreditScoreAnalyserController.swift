@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CustomUI
 
 // View controller responsible for showing credit score chart and it's details.
 class CreditScoreAnalyserController: UIViewController, ActionDelegate {

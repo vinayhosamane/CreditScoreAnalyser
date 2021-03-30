@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-89-GnJ" userLabel="CreditScore Circle View" customClass="CircleUI" customModule="CreditScoreAnalyser">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zob-89-GnJ" userLabel="CreditScore Circle View" customClass="CircleUI" customModule="CustomUI">
                                 <rect key="frame" x="119" y="271" width="280" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="D7P-mp-OXe"/>
@@ -75,7 +75,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-St-mfL" userLabel="search view" customClass="SearchScoreView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMA-St-mfL" userLabel="search view" customClass="SearchScoreView" customModule="CustomUI">
                                 <rect key="frame" x="96" y="660" width="326" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -89,35 +89,35 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dtc-BW-nzK">
                                         <rect key="frame" x="20" y="148" width="643" height="360"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-o4-ax1" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-o4-ax1" customClass="CreditScoreScaleView" customModule="CustomUI">
                                                 <rect key="frame" x="0.0" y="0.0" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="r4r-8g-Fyx"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6z-ht-5of" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6z-ht-5of" customClass="CreditScoreScaleView" customModule="CustomUI">
                                                 <rect key="frame" x="0.0" y="73" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="2Nh-R7-Alq"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-I4-2qr" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVb-I4-2qr" customClass="CreditScoreScaleView" customModule="CustomUI">
                                                 <rect key="frame" x="0.0" y="146" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="kz9-jB-J1F"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhG-6y-fjQ" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EhG-6y-fjQ" customClass="CreditScoreScaleView" customModule="CustomUI">
                                                 <rect key="frame" x="0.0" y="219" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="68" id="dqe-mc-59F"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og1-re-66F" customClass="CreditScoreScaleView" customModule="CreditScoreAnalyser" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="og1-re-66F" customClass="CreditScoreScaleView" customModule="CustomUI">
                                                 <rect key="frame" x="0.0" y="292" width="643" height="68"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -231,9 +231,9 @@
                                 <exclude reference="3Q8-Ri-bZ7"/>
                                 <exclude reference="E50-16-xKv"/>
                                 <exclude reference="f4r-91-ILL"/>
-                                <exclude reference="cUc-j3-hHm"/>
                                 <exclude reference="hYH-kh-bBu"/>
                                 <exclude reference="mwy-NQ-sdf"/>
+                                <exclude reference="cUc-j3-hHm"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -243,12 +243,12 @@
                                 <exclude reference="cFu-xE-E00"/>
                                 <include reference="f4r-91-ILL"/>
                                 <exclude reference="vJT-js-PfG"/>
-                                <include reference="cUc-j3-hHm"/>
-                                <exclude reference="y2U-0J-iMy"/>
-                                <exclude reference="Zf1-aC-h27"/>
                                 <exclude reference="GwY-xd-8ME"/>
                                 <include reference="hYH-kh-bBu"/>
                                 <include reference="mwy-NQ-sdf"/>
+                                <include reference="cUc-j3-hHm"/>
+                                <exclude reference="y2U-0J-iMy"/>
+                                <exclude reference="Zf1-aC-h27"/>
                             </mask>
                         </variation>
                     </view>
