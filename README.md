@@ -2,6 +2,8 @@
 
 A Sample UI application, which shows user's credit score by reading data from json.
 
+Note: CustomUI framework has been added into the workspace. Please checkout the code to debug or read the code.
+
 ### Case study:
 
 * Developer should create the sample UI application with all necessary features.
@@ -19,9 +21,8 @@ Note: Developer is free to use any image assets from the internet. (only if nece
 * Developed re-usable scale custom view.
 * Developed re-usable scale marker custom view.
 * Developed re-usable search view.
-* Stiched all these custom views in a container view inside storyboard to look like the sample UI.
-
-Note: Since re-usable custom view are developed, it won't be difficult to move them to a framework for easy integration at multiple places.
+* Moved all these custom views to framework.
+* Embedded custom views framework into app project and developed dashboard.
 
 ### Code Coverage:
 
@@ -37,5 +38,4 @@ Note: We can use XCUITests to test custom views to match the requirement.
 ### Improvements
 
 * UI can be developed with size class in considerations. i.e supoprting auto layout in multiple device formats. This needs some sort of UI layout design from UX team.
-* All these custom views can be moved to a share location such as frameworks or library for easy integrations for other developers.
 * XCUITest cases can be implmented to make sure there are no regressions on UI requirements in future.
