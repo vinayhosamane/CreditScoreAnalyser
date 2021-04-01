@@ -9,6 +9,7 @@ Note: CustomUI framework has been added into the workspace. Please checkout the 
 * Developer should create the sample UI application with all necessary features.
 * Re-usable components should be designed for better code modularisation.
 * Unit-test cases should be written for bussiness logic.
+* JSON should drive the dashboard. If any value changes in JSON, it should update the dashboard.
 
 Note: Developer is free to use any image assets from the internet. (only if necessary)
 
