@@ -27,7 +27,7 @@ class CreditScoreAnalyserController: UIViewController, ActionDelegate {
     var viewsMap: [CreditScoreScaleView] = []
     
     // credit score model
-    var creditScoreReport: CreditScoreCalculatable?
+    var creditScoreCalculator: CreditScoreCalculatable?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -39,13 +39,13 @@ class CreditScoreAnalyserController: UIViewController, ActionDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // map of all scle views
+        // map of all scale views
         viewsMap = [highestScaleView, higherScaleView, mediumScaleView, lowScaleView, lowestScaleView]
         
         // process json credit score report
-        creditScoreReport = CreditScoreCalculator(with: "SampleCreditScoreReport")
+        creditScoreCalculator = CreditScoreCalculator(with: "SampleCreditScoreReport")
         
-        guard let report = creditScoreReport else {
+        guard let report = creditScoreCalculator else {
             return
         }
         
@@ -70,36 +70,18 @@ class CreditScoreAnalyserController: UIViewController, ActionDelegate {
     }
     
     func configureScaleView(forScale scale: Scale, forView view: CreditScoreScaleView) {
-        guard let report = creditScoreReport else {
+        guard let calculator = creditScoreCalculator else {
             return
         }
         
-        let shouldShowMarker = report.doesScoreBelongsToScale(score: report.getCreditScore(), scale: scale)
+        let shouldShowMarker = calculator.doesScoreBelongsToScale(score: calculator.getCreditScore(), scale: scale)
         view.hideMarker(hide: !shouldShowMarker)
-        let markerLabelText = "\(Int(report.getCreditScore()))"
+        let markerLabelText = "\(Int(calculator.getCreditScore()))"
         let scaleInput = CreditScoreScaleViewInput(percentageValue: scale.percentile,
                                                         scaleContainerViewBGColor: UIColor(hexRGB: scale.colorHex) ?? .white,
                                                         scaleLabelValue: "\(scale.min) - \(scale.max)", shouldShowMarker: shouldShowMarker,
                                                         markerLabelText: shouldShowMarker ? markerLabelText : nil)
         view.configWithValues(with: scaleInput)
-    }
-    
-    func addCenterLabelToMaskView() {
-        guard let report = creditScoreReport else {
-            return
-        }
-        // let's add center text to the circle.
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 40.0, weight: .heavy)
-        label.frame = CGRect(x: creditScoreCircleView.bounds.origin.x + creditScoreCircleView.bounds.size.width / 2 - 40,
-                             y: creditScoreCircleView.bounds.origin.y + creditScoreCircleView.bounds.size.height / 2 - 40,
-                             width: 100,
-                             height: 100)
-        label.text = "\(Int(report.getCreditScore()))"
-        label.textColor = report.getCreditScoreColor() ?? .red
-        label.isHidden = false
-        creditScoreCircleView.addSubview(label)
-        creditScoreCircleView.setNeedsDisplay()
     }
     
     func searchButtonClicked() {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Scale: Codable {
+struct Scale: Decodable {
     var type: String
     var min: Int
     var max: Int
@@ -15,7 +15,7 @@ struct Scale: Codable {
     var percentile: String
 }
 
-struct CreditScore: Codable {
+struct CreditScore: Decodable {
     var score: Double
     var scaleMin: Int
     var scaleMax: Int

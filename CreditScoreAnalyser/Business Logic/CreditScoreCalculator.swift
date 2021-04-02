@@ -11,24 +11,28 @@ import UIKit
 // this class helps in fetching json data for the credit score and de-serializes data into objects.
 class CreditScoreCalculator: CreditScoreCalculatable {
     
-    var creditScoreReport: CreditScore? = nil
+    private(set) var creditScoreReport: CreditScore? = nil
     
     // let's write code to get the json from bundle
     init(with jsonFileName: String) {
-        deSerializeJsonFile(for: jsonFileName)
+        DataConstructor.shared.fetchData(for: jsonFileName) { (result) in
+            switch result {
+            case .success(let creditScore):
+                // received model
+            creditScoreReport = creditScore
+            case .failure(_):
+                // received error
+            break
+            }
+        }
     }
     
-    // datat processor
-    private func deSerializeJsonFile(for json: String) {
-        // get json data from bundle
-        do {
-            if let jsonPath = Bundle.main.path(forResource: json, ofType: "json"),
-               let jsonData = try String(contentsOfFile: jsonPath).data(using: .utf8) {
-                creditScoreReport = try JSONDecoder().decode(CreditScore.self, from: jsonData)
-            }
-        } catch {
-            print("something is wrong with json de-serialization")
-        }
+    //returns scales range in array
+    private func buildRange() -> [Double]? {
+        let scales = creditScoreReport?.scales.map({ (scale: Scale) -> Any in
+            return scale.min...scale.max
+        })
+        return scales as? [Double]
     }
     
     // returns credit score
@@ -54,14 +58,6 @@ class CreditScoreCalculator: CreditScoreCalculatable {
             }
         })
         return color
-    }
-    
-    //returns scales range in array
-    private func buildRange() -> [Double]? {
-        let scales = creditScoreReport?.scales.map({ (scale: Scale) -> Any in
-            return scale.min...scale.max
-        })
-        return scales as? [Double]
     }
     
     func doesScoreBelongsToScale(score: Double, scale: Scale) -> Bool {
