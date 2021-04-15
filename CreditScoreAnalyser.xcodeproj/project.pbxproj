@@ -15,7 +15,6 @@
 		3D28C0F82610528900341BE3 /* CreditScoreCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */; };
 		3D28C101261052D500341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
 		3D28C11726105C7A00341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
-		3D7D7BCF262892270072D931 /* CustomUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7D7BCE262892270072D931 /* CustomUI.framework */; };
 		3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D47260C77D200A84707 /* AppDelegate.swift */; };
 		3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D49260C77D200A84707 /* SceneDelegate.swift */; };
 		3DE25D4C260C77D200A84707 /* CreditScoreAnalyserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* CreditScoreAnalyserController.swift */; };
@@ -65,7 +64,6 @@
 		3D28C0DC26104FA600341BE3 /* CreditScoreCalculatableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatableProtocol.swift; sourceTree = "<group>"; };
 		3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatorTests.swift; sourceTree = "<group>"; };
 		3D28C100261052D500341BE3 /* MockCreditScoreReport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCreditScoreReport.json; sourceTree = "<group>"; };
-		3D7D7BCE262892270072D931 /* CustomUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomUI.framework; sourceTree = "<group>"; };
 		3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE25D47260C77D200A84707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE25D49260C77D200A84707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7D7BCF262892270072D931 /* CustomUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +109,6 @@
 		3D04E00E261394CE007C5C55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3D7D7BCE262892270072D931 /* CustomUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
