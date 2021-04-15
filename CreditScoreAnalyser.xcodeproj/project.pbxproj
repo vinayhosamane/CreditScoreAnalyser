@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D04E00F261394CE007C5C55 /* CustomUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D04E007261394BD007C5C55 /* CustomUI.framework */; };
-		3D04E010261394CE007C5C55 /* CustomUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D04E007261394BD007C5C55 /* CustomUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D0CB9CB26170FB400060809 /* DataConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0CB9CA26170FB400060809 /* DataConstructor.swift */; };
 		3D18449E260ECC190003504F /* SampleCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D18449D260ECC190003504F /* SampleCreditScoreReport.json */; };
 		3D1844A4260ECC620003504F /* CreditScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1844A3260ECC620003504F /* CreditScoreCalculator.swift */; };
@@ -17,6 +15,7 @@
 		3D28C0F82610528900341BE3 /* CreditScoreCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */; };
 		3D28C101261052D500341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
 		3D28C11726105C7A00341BE3 /* MockCreditScoreReport.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D28C100261052D500341BE3 /* MockCreditScoreReport.json */; };
+		3D7D7BCF262892270072D931 /* CustomUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7D7BCE262892270072D931 /* CustomUI.framework */; };
 		3DE25D48260C77D200A84707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D47260C77D200A84707 /* AppDelegate.swift */; };
 		3DE25D4A260C77D200A84707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D49260C77D200A84707 /* SceneDelegate.swift */; };
 		3DE25D4C260C77D200A84707 /* CreditScoreAnalyserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE25D4B260C77D200A84707 /* CreditScoreAnalyserController.swift */; };
@@ -29,20 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D04E006261394BD007C5C55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D04E001261394BC007C5C55 /* CustomUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D04DEAF26138057007C5C55;
-			remoteInfo = CustomUI;
-		};
-		3D04E008261394BD007C5C55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D04E001261394BC007C5C55 /* CustomUI.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3D04DEB826138057007C5C55;
-			remoteInfo = CustomUITests;
-		};
 		3DE25D5E260C77D500A84707 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3DE25D3C260C77D200A84707 /* Project object */;
@@ -66,7 +51,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D04E010261394CE007C5C55 /* CustomUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +58,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D04E001261394BC007C5C55 /* CustomUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CustomUI.xcodeproj; path = ../CustomUI/CustomUI.xcodeproj; sourceTree = "<group>"; };
 		3D0CB9CA26170FB400060809 /* DataConstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConstructor.swift; sourceTree = "<group>"; };
 		3D18449D260ECC190003504F /* SampleCreditScoreReport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleCreditScoreReport.json; sourceTree = "<group>"; };
 		3D1844A3260ECC620003504F /* CreditScoreCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculator.swift; sourceTree = "<group>"; };
@@ -82,6 +65,7 @@
 		3D28C0DC26104FA600341BE3 /* CreditScoreCalculatableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatableProtocol.swift; sourceTree = "<group>"; };
 		3D28C0F72610528900341BE3 /* CreditScoreCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditScoreCalculatorTests.swift; sourceTree = "<group>"; };
 		3D28C100261052D500341BE3 /* MockCreditScoreReport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockCreditScoreReport.json; sourceTree = "<group>"; };
+		3D7D7BCE262892270072D931 /* CustomUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomUI.framework; sourceTree = "<group>"; };
 		3DE25D44260C77D200A84707 /* CreditScoreAnalyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditScoreAnalyser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE25D47260C77D200A84707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DE25D49260C77D200A84707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D04E00F261394CE007C5C55 /* CustomUI.framework in Frameworks */,
+				3D7D7BCF262892270072D931 /* CustomUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,18 +109,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D04E002261394BC007C5C55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3D04E007261394BD007C5C55 /* CustomUI.framework */,
-				3D04E009261394BD007C5C55 /* CustomUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3D04E00E261394CE007C5C55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D7D7BCE262892270072D931 /* CustomUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +180,6 @@
 		3DE25D3B260C77D200A84707 = {
 			isa = PBXGroup;
 			children = (
-				3D04E001261394BC007C5C55 /* CustomUI.xcodeproj */,
 				3DE25D46260C77D200A84707 /* CreditScoreAnalyser */,
 				3DE25D60260C77D500A84707 /* CreditScoreAnalyserTests */,
 				3DE25D6B260C77D500A84707 /* CreditScoreAnalyserUITests */,
@@ -349,12 +324,6 @@
 			mainGroup = 3DE25D3B260C77D200A84707;
 			productRefGroup = 3DE25D45260C77D200A84707 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3D04E002261394BC007C5C55 /* Products */;
-					ProjectRef = 3D04E001261394BC007C5C55 /* CustomUI.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				3DE25D43260C77D200A84707 /* CreditScoreAnalyser */,
@@ -363,23 +332,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		3D04E007261394BD007C5C55 /* CustomUI.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CustomUI.framework;
-			remoteRef = 3D04E006261394BD007C5C55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3D04E009261394BD007C5C55 /* CustomUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CustomUITests.xctest;
-			remoteRef = 3D04E008261394BD007C5C55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DE25D42260C77D200A84707 /* Resources */ = {
@@ -602,6 +554,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CreditScoreAnalyser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,6 +578,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2ULB89U5PD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CreditScoreAnalyser/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (

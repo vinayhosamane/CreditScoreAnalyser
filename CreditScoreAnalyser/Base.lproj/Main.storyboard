@@ -266,6 +266,33 @@
             </objects>
             <point key="canvasLocation" x="-57.101024890190331" y="51.5625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="zOY-uB-bwU">
+            <objects>
+                <viewController id="Ysi-m7-qqT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ji6-IP-r46">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fi-3f-OR6" customClass="CircleUI" customModule="CustomUI">
+                                <rect key="frame" x="506" y="318" width="425" height="391"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Orf-DP-heF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Orf-DP-heF" firstAttribute="bottom" secondItem="3fi-3f-OR6" secondAttribute="bottom" constant="295" id="Idc-fW-xth"/>
+                            <constraint firstItem="3fi-3f-OR6" firstAttribute="leading" secondItem="Orf-DP-heF" secondAttribute="leading" constant="506" id="K5n-vS-TOw"/>
+                            <constraint firstItem="Orf-DP-heF" firstAttribute="trailing" secondItem="3fi-3f-OR6" secondAttribute="trailing" constant="435" id="Rfs-tI-6mJ"/>
+                            <constraint firstItem="3fi-3f-OR6" firstAttribute="top" secondItem="Orf-DP-heF" secondAttribute="top" constant="318" id="quA-un-oLd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4i-oE-8LI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-67.203513909224" y="733.59375"/>
+        </scene>
     </scenes>
     <resources>
         <image name="creditScoreIcon" width="225" height="225"/>
